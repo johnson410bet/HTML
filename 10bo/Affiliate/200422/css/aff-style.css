@@ -900,6 +900,11 @@ body .aff-wrap {
     -webkit-align-items: center;
     align-items: center;
 }
+.swiper-slide a,
+.swiper-slide a img{
+    height: 100%;
+    width: auto;
+}
 .swiper-pagination-bullet{
     width: 24px;
     height: 4px;
@@ -910,6 +915,12 @@ body .aff-wrap {
 .swiper-pagination-bullet-active{
     background: #1DB955;
     opacity: 1;
+}
+@media (max-width: 768px) {
+    .swiper-wrap{
+        margin-top: 60px;
+        max-height: 35vw;
+    }
 }
 
 

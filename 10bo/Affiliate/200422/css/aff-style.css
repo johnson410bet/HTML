@@ -867,7 +867,7 @@ body .aff-wrap {
 
 }
 
-/*200422 updata by johnson*/
+/*200422 updata swiper*/
 .swiper-wrap {
     margin-top: 84px;
     height: 500px;
@@ -900,8 +900,7 @@ body .aff-wrap {
     -webkit-align-items: center;
     align-items: center;
 }
-.swiper-slide a,
-.swiper-slide a img{
+.swiper-slide img{
     height: 100%;
     width: auto;
 }

@@ -57,13 +57,17 @@ h6 {
     font-size: 12px;
 }
 
+button {
+    font-size: 100%;
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    background: inherit;
+}
+
 .clear {
     display: block;
     clear: both;
-}
-
-.color-click {
-    color: #1DB955;
 }
 
 .btn {
@@ -115,8 +119,12 @@ h6 {
     color: #Fdd900;
 }
 
+.text-click {
+    color: #1DB955;
+}
+
 .show {
-    display: block;
+    display: block !important;
 }
 
 .container {
@@ -125,6 +133,14 @@ h6 {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.show-sm {
+    display: none;
+}
+
+.hide-sm {
+    display: block;
 }
 
 @media (max-width: 767px) {
@@ -138,6 +154,14 @@ h6 {
         height: 38px;
         line-height: 38px;
         font-size: 14px;
+    }
+
+    .show-sm {
+        display: block;
+    }
+
+    .hide-sm {
+        display: none;
     }
 }
 
@@ -224,15 +248,8 @@ h6 {
     max-width: 100%;
 }
 
-.col-sm-show {
-    display: none;
-}
 
 @media (max-width: 767px) {
-    .col-sm-show {
-        display: block;
-    }
-
     .col-sm-1 {
         max-width: 8.333333%;
     }
@@ -383,7 +400,6 @@ h6 {
 
 .kv {
     position: relative;
-    margin-top: 84px;
     height: 500px;
     overflow: hidden;
 }
@@ -398,7 +414,6 @@ h6 {
 
 @media (max-width: 767px) {
     .kv {
-        margin-top: 60px;
         height: 35vw;
     }
 }
@@ -565,34 +580,78 @@ h6 {
 
 
 /*-- 200424 updata 10coin --*/
-.coin-intro .btn {
-    margin-top: 20px;
-    width: auto;
+.coin-intro {
+    text-align: center;
 }
 
 .coin-intro img {
+    width: 33.33%;
+}
+
+.coin-intro .intro-text {
+    padding: 0 20px;
+}
+
+.coin-promo {
+    background: #fff;
+}
+
+.coin-promo .btn {
+    margin-top: 20px;
+    padding: 0 40px;
+    width: auto;
+}
+
+.coin-promo img {
     width: 100%;
 }
 
 .coin-event {
-    background: #fff;
-    text-align: center;
-}
-.coin-event img{
-    width: 100%;
-}
-.coin-tnc{
     text-align: center;
 }
 
+.coin-event img {
+    width: 100%;
+}
+
+.coin-tnc {
+    background: #fff;
+    text-align: center;
+}
+
+.coin-tnc .tnc-text {
+    display: none;
+    margin-top: 20px;
+    padding: 0 40px;
+    text-align: left;
+    opacity: .8;
+}
+
 @media (max-width: 768px) {
-    .coin-intro{
+    .coin-intro img {
+        display: inline-block;
+        padding-top: 10px;
+        width: 25%;
+        vertical-align: top;
+    }
+
+    .coin-intro .intro-text {
+        display: inline-block;
+        margin-left: 2%;
+        padding: 0;
+        width: 70%;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .coin-promo {
         text-align: center;
     }
-    .coin-intro .btn{
-        width: inherit;
+    .coin-tnc .tnc-text {
+        padding: 0 10px;
     }
 }
+
 /*-- 10coin end --*/
 
 

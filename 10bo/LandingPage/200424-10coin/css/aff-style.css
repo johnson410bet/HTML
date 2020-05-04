@@ -62,7 +62,7 @@ h6 {
     clear: both;
 }
 
-.color-secondary {
+.color-click {
     color: #1DB955;
 }
 
@@ -576,6 +576,13 @@ h6 {
 
 .coin-event {
     background: #fff;
+    text-align: center;
+}
+.coin-event img{
+    width: 100%;
+}
+.coin-tnc{
+    text-align: center;
 }
 
 @media (max-width: 768px) {

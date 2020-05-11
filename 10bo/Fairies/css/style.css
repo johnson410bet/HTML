@@ -1173,6 +1173,17 @@ body {
     }
 }
 
+/*-- fairies video --*/
+
+.fairies-video video{
+    position: absolute;
+    top: 0;
+    left:50%;
+    height: 100%;
+    width: auto;
+    transform: translateX(-50%);
+}
+
 
 
 

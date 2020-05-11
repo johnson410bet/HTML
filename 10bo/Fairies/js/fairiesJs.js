@@ -1,12 +1,14 @@
 $(function() {
     // photos image open
     $(".fairies-photos .photos-img").click(function() {
-        $(".popup-wrap").addClass("active");
-        $(".slider-photos li").eq($(this).index(".photos-img")).addClass("active");
-        if($('html').hasClass('IsMobile')) {
-            $(".popup-wrap").css({'height':'713px'});
-            $("#mob-wrapper",window.parent.document).css({'height':'713px','overflow':'hidden'});
-            $(parent.window).scrollTop(0);  
+        if ($(this).hasClass("fairies-video")) {} else {
+            $(".popup-wrap").addClass("active");
+            $(".slider-photos li").eq($(this).index(".photos-img")).addClass("active");
+            if ($('html').hasClass('IsMobile')) {
+                $(".popup-wrap").css({ 'height': '713px' });
+                $("#mob-wrapper", window.parent.document).css({ 'height': '713px', 'overflow': 'hidden' });
+                $(parent.window).scrollTop(0);
+            }
         }
     })
     // popup photo slider next
@@ -31,8 +33,8 @@ $(function() {
     $(".popup-close").click(function() {
         $(".popup-wrap.active").removeClass("active");
         $(".slider-photos li").removeClass("active");
-        if($('html').hasClass('IsMobile')) {
-            $("#mob-wrapper",window.parent.document).css({'height':'auto','overflow':'auto'});  
+        if ($('html').hasClass('IsMobile')) {
+            $("#mob-wrapper", window.parent.document).css({ 'height': 'auto', 'overflow': 'auto' });
             // $("#rnd-iframe",window.parent.document).css({'height':'auto','overflow':'auto'});  
         }
     })
@@ -92,7 +94,7 @@ function navAnimtion() {
     }
 }
 
-// photos loading
+// photos and video loading
 function changePhotos(num) {
     $(".fairies-kv li").eq(num).addClass("active").siblings().removeClass("active");
     var photoNum = 1;
@@ -105,6 +107,9 @@ function changePhotos(num) {
         $(this).attr("src", "https://content.100b108.com/fairies/images/Photos/" + (num + 1) + "/Photos-" + sliderNum + ".jpg");
         sliderNum++;
     })
+    // video
+    $(".fairies-video video source").attr("src", "https://content.100b108.com/fairies/video/video" + (num + 1) + ".mp4")
+    $(".fairies-video video")[0].load();
 }
 
 // <!-- script end -->

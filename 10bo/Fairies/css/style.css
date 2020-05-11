@@ -1176,12 +1176,30 @@ body {
 /*-- fairies video --*/
 
 .fairies-video video{
+    display: block;
     position: absolute;
     top: 0;
     left:50%;
     height: 100%;
     width: auto;
     transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+    .fairies-video video {
+        position: static;
+        width: 100%;
+        height: auto;
+        transform: none;
+    }
+    .fairies-photos .fairies-video img{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: auto;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
 }
 
 

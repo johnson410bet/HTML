@@ -938,6 +938,28 @@ body .aff-wrap {
 
 
 /*200518 update news page*/
+.aff-wrap .aff-news{
+    height: 250px;
+    padding-top: 80px;
+    background:url(../images/Affiliate-news-1920x250.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+.aff-wrap .aff-news h3{
+    color: #fff;
+}
+.aff-wrap .aff-news .btn{
+    max-width: 240px;
+}
+@media (max-width: 768px) {
+    .aff-wrap .aff-news{
+        padding-top: 60px;
+        height: 200px;
+    }
+}
+
+
 .aff-news-wrap .section img {
     display: block;
     width: 100%;

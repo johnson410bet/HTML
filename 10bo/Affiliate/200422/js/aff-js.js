@@ -31,7 +31,8 @@ $(function() {
 
     $(".aff-news-wrap .marquee").click(function(){
         $(".aff-wrap .aff-popup").addClass("show");
-        $(this).appendTo(".aff-popup-content");
+        $(".aff-popup-content").empty();
+        $(this).clone().prependTo($(".aff-popup-content"));
     })
 
     //goTop

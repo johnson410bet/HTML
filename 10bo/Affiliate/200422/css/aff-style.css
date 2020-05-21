@@ -91,7 +91,11 @@ body .aff-wrap {
 .aff-wrap .show {
     display: block;
 }
-
+.aff-wrap ..aff-wrap .show {
+    display: block;
+} {
+    display: none;
+}
 .aff-wrap .container {
     width: 100%;
     padding-right: 15px;
@@ -195,6 +199,14 @@ body .aff-wrap {
 }
 
 @media (max-width: 767px) {
+    .grid {
+        margin: 0;
+    }
+
+    [class*="col-"] {
+        padding: 5px;
+    }
+
     .col-sm-show {
         display: block;
     }
@@ -481,7 +493,6 @@ body .aff-wrap {
 
 .aff-wrap .faq-select-wrap {
     display: none;
-    padding: 0 15px;
 }
 
 .aff-wrap .faq-select-wrap.show {
@@ -737,8 +748,6 @@ body .aff-wrap {
 }
 
 @media (max-width: 768px) {
-    [class*="col-"] {}
-
     .aff-wrap .section {
         padding: 20px 0;
     }
@@ -929,9 +938,21 @@ body .aff-wrap {
 
 
 /*200518 update news page*/
+.aff-news-wrap .section img {
+    display: block;
+    width: 100%;
+}
+
+.aff-news-wrap .section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 @media (max-width: 768px) {
     .aff-news-wrap .section {
         padding: 10px 0;
+    }
+    .aff-news-wrap .section h4{
+        margin-bottom: 5px;
     }
 }
 
@@ -1037,16 +1058,6 @@ body .aff-wrap {
         line-height: 30px;
         font-size: 12px;
     }
-}
-
-.aff-provider img {
-    display: block;
-    width: 100%;
-}
-
-.aff-provider h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
 }
 
 .aff-provider .new-provider {
@@ -1175,15 +1186,8 @@ body .aff-wrap {
     background: #FFF;
 }
 
-.items-wrap h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
 .items-list img {
-    display: block;
     margin-bottom: 5px;
-    width: 100%;
     border-radius: 5px;
 }
 
@@ -1226,6 +1230,37 @@ body .aff-wrap {
         left: 0;
         transform: translate(0, 0);
     }
+}
+/*table*/
+.table-ads{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 5px;
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #e8e8e8;
+}
+.table-ads tr:nth-child(even){
+    background: #F2F5F8;
+}
+.table-ads th{
+    padding: 17px 10px;
+    background: #0A427F;
+    font-weight: normal;
+    color: #fff;
+}
+.table-ads th+th {
+    border-left: 1px solid #547ba6;
+}
+.table-ads td{
+    padding: 17px 10px;
+}
+.table-ads td+td {
+    border-left: 1px solid #e8e8e8;
 }
 
 

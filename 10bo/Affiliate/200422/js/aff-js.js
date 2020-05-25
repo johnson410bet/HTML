@@ -29,6 +29,7 @@ $(function() {
         $(".aff-popup .select-content>ul>li").eq($(".aff-popup .select-menu>ul>li.active").index()).addClass("active").siblings().removeClass("active");
     })
 
+    // popup-marquee
     $(".aff-news-wrap .marquee").click(function(){
         $(".aff-wrap .aff-popup").addClass("show");
         $(".aff-popup-content").empty();

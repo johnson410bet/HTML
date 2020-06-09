@@ -636,7 +636,7 @@ button {
 .wizard {
     position: relative;
     margin-top: -30px;
-    margin-bottom: -94px;
+    margin-bottom: -90px;
     /*height: 529px;
     background:url(../images/10coin/Wizard/bg.jpg) no-repeat;
     background-size: 690px 597px;
@@ -699,7 +699,7 @@ button {
     top: 51%;
     left: 82%;
     width: 15.2%;
-    animation: eleDownUp 4s infinite;
+    animation: eleUpDown 4s infinite;
 }
 
 @keyframes eleUpDown {
@@ -763,10 +763,23 @@ button {
 }
 
 .coin-pros {
+    position: relative;
+    padding-bottom: 120px;
+    margin-bottom: -65px;
     background: url(../images/10coin/advantage-bg.jpg) #062359 no-repeat;
-    /*background-size: cover;*/
     background-position: center center;
     color: #fff;
+    overflow: hidden;
+}
+
+.coin-pros:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 66px;
+    background: #F2F5F8;
 }
 
 .coin-pros h1 {
@@ -804,17 +817,22 @@ button {
 }
 
 .coin-pros .char2 {
-    display: none;
     position: absolute;
-    right: -15px;
-    bottom: -80px;
-    width: 39.4%;
+    width: 69.6%;
+    right: -200px;
+    bottom: -190px;
 }
 
 @media (max-width: 768px) {
     .coin-pros {
+        padding-bottom: 20px;
+        margin: 0;
         background-size: auto 90%;
         background-position: center bottom -120%;
+        overflow: visible;
+    }
+    .coin-pros:before{
+        display: none;
     }
 
     .coin-pros .grid>div {
@@ -846,8 +864,11 @@ button {
     .pros-item .pros-text p {
         font-size: 12px;
     }
-    .coin-pros .char2{
-        display: block;
+
+    .coin-pros .char2 {
+        right: -15px;
+        bottom: -80px;
+        width: 39.4%;
     }
 }
 
@@ -954,7 +975,8 @@ button {
     width: 94%;
     bottom: -3%;
 }
-.coin-event .char4-1{
+
+.coin-event .char4-1 {
     position: absolute;
     top: -115px;
     left: 50%;
@@ -964,10 +986,11 @@ button {
 }
 
 @media (max-width: 768px) {
-    .coin-event{
+    .coin-event {
         margin-top: 100px;
         overflow: visible;
     }
+
     .coin-event .char3,
     .coin-event .char4 {
         display: none;
@@ -986,6 +1009,10 @@ button {
     opacity: .8;
 }
 
+.coin-tnc .tnc-switch {
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .coin-tnc .tnc-text {
         padding: 0 10px;
@@ -993,83 +1020,7 @@ button {
 }
 
 /*-- 10coin end --*/
-/*-- wizard animation --*/
 
-
-/*.wizard .lead {
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    height: 560px;
-    width: auto;
-    transform: translateX(-50%);
-}
-
-.wizard [class*="ele"] {
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.wizard .ele1 {
-    top: 280px;
-    transform: translateX(-320%);
-    width: 81px;
-    height: 73px;
-    background-image: url(../images/10coin/Wizard/element1-book.png);
-}
-
-.wizard .ele2 {
-    top: 154px;
-    transform: translateX(-400%);
-    width: 78px;
-    height: 66px;
-    background-image: url(../images/10coin/Wizard/element2-coin.png);
-}
-
-.wizard .ele3 {
-    top: 30px;
-    transform: translateX(-480%);
-    width: 53px;
-    height: 51px;
-    background-image: url(../images/10coin/Wizard/element3-A.png);
-}
-
-.wizard .ele4 {
-    top: -25px;
-    transform: translateX(-150%);
-    width: 41px;
-    height: 25px;
-    background-image: url(../images/10coin/Wizard/element4-coin.png);
-}
-
-.wizard .ele5 {
-    top: -20px;
-    transform: translateX(100%);
-    width: 149px;
-    height: 119px;
-    background-image: url(../images/10coin/Wizard/element5-mobile.png);
-}
-
-.wizard .ele6 {
-    top: 170px;
-    transform: translateX(340%);
-    width: 44px;
-    height: 51px;
-    background-image: url(../images/10coin/Wizard/element6-K.png);
-}
-
-.wizard .ele7 {
-    top: 260px;
-    transform: translateX(204%);
-    width: 96px;
-    height: 81px;
-    background-image: url(../images/10coin/Wizard/element7-coin.png);
-}*/
-
-/*-- wizard animation end --*/
 /*-- swiper --*/
 .swiper-wrap {
     height: 500px;
@@ -1088,20 +1039,6 @@ button {
     text-align: center;
     font-size: 18px;
     background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
 }
 
 .swiper-slide img {

@@ -14,7 +14,6 @@
 
 <body>
     <div class="coin-wrap">
-        <!-- <div class="kv" id="top"><img src="images/10coin/home-10coins-1920x500.jpg" alt=""></div> -->
         <div class="swiper-wrap hide-sm">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -56,20 +55,15 @@
                             <img class="ele5" src="images/10coin/Wizard/element5-mobile.png" alt="">
                             <img class="ele6" src="images/10coin/Wizard/element6-K.png" alt="">
                             <img class="ele7" src="images/10coin/Wizard/element7-coin.png" alt="">
-                            <!-- <i class="ele1"></i>
-                            <i class="ele2"></i>
-                            <i class="ele3"></i>
-                            <i class="ele4"></i>
-                            <i class="ele5"></i>
-                            <i class="ele6"></i>
-                            <i class="ele7"></i> -->
                         </div>
                     </div>
                     <div class="col-5 col-sm-12">
-                        <h1 class="color-primary">什么是10Coins十通币？</h1>
-                        <h5>10Coins十通币可以让您透过加密币进行存款，将您的比特币(BTC/BSV)，以太币(ETH)，莱特币(LTC)，柚子币(EOS)转换成10Coins 十通币进行存款。</h5>
-                        <h5>加密币交易不受任何机构监督或影响，匿名交易也意味着安全性极高。在10Bet十博提款时，您也可以在没有使用加密币存款的前提下，把现金转直接透过10Coins十通币进行提款。</h5>
-                        <a href="" class="btn btn-primary">立即注册</a>
+                        <div class="coin-intro-main">
+                            <h1 class="color-primary">什么是10Coins十通币？</h1>
+                            <h5>10Coins十通币可以让您透过加密币进行存款，将您的比特币(BTC/BSV)，以太币(ETH)，莱特币(LTC)，柚子币(EOS)转换成10Coins 十通币进行存款。</h5>
+                            <h5>加密币交易不受任何机构监督或影响，匿名交易也意味着安全性极高。在10Bet十博提款时，您也可以在没有使用加密币存款的前提下，把现金转直接透过10Coins十通币进行提款。</h5>
+                            <a href="" class="btn btn-primary">立即注册</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -218,10 +212,6 @@
                 </div>
             </div>
             <script>
-            // function tncShow() {
-            //     var element = document.getElementById("tnc-text");
-            //     element.classList.toggle("show");
-            // }
             $(function() {
                 // kv
                 var swiper = new Swiper(".swiper-container", {
@@ -244,10 +234,8 @@
                 });
                 // tnc
                 $(".tnc-switch").click(function() {
-                    $(".tnc-text").toggleClass("show");
+                    $(".tnc-text").slideToggle();
                 })
-
-
             })
             </script>
         </div>

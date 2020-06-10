@@ -708,29 +708,29 @@ button {
 
 @keyframes eleUpDown {
     0% {
-        transform: translateY(-10%);
+        transform: translateY(-15%);
     }
 
     50% {
-        transform: translateY(10%);
+        transform: translateY(15%);
     }
 
     100% {
-        transform: translateY(-10%);
+        transform: translateY(-15%);
     }
 }
 
 @keyframes eleDownUp {
     0% {
-        transform: translateY(10%);
+        transform: translateY(15%);
     }
 
     50% {
-        transform: translateY(-10%);
+        transform: translateY(-15%);
     }
 
     100% {
-        transform: translateY(10%);
+        transform: translateY(15%);
     }
 }
 
@@ -824,7 +824,7 @@ button {
     position: absolute;
     width: 69.6%;
     right: -200px;
-    bottom: -190px;
+    bottom: -138px;
 }
 
 @media (max-width: 768px) {
@@ -980,13 +980,15 @@ button {
     bottom: -3%;
 }
 
-.coin-event .char4-1 {
+.coin-event .char5 {
     position: absolute;
     top: -115px;
     left: 50%;
     transform: translateX(-50%);
     width: 200px;
-    z-index: -1;
+    height: 115px;
+    background: url(../images/10coin/characters/characters4.png) center top;
+    background-size: cover;
 }
 
 @media (max-width: 768px) {

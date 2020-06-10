@@ -98,7 +98,7 @@ button {
     line-height: 44px;
     background: #1DB955;
     border-radius: 29px;
-    font-size: 18px;
+    font-size: 15px;
     color: #FFFFFF;
 }
 
@@ -637,12 +637,16 @@ button {
     position: relative;
     margin-top: -30px;
     margin-bottom: -90px;
-    /*height: 529px;
-    background:url(../images/10coin/Wizard/bg.jpg) no-repeat;
-    background-size: 690px 597px;
-    background-position: center center;*/
+    animation:fadeIn 2s forwards;
 }
-
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .wizard .lead {
     width: 102%;
 }

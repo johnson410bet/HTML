@@ -1127,8 +1127,29 @@ button {
     transform: translateX(-50%);
     width: 200px;
     height: 115px;
-    background: url(../images/characters/characters4.png) center top;
+    background: center top;
     background-size: cover;
+    animation: char5 2.3s infinite;
+}
+@keyframes char5{
+    0%{
+        background-image: url(../images/characters/characters5-1.jpg);
+    }
+    43%{
+        background-image: url(../images/characters/characters5-1.jpg);
+    }
+    47.3%{
+        background-image: url(../images/characters/characters5-2.jpg);
+    }
+    51.6%{
+        background-image: url(../images/characters/characters5-3.jpg);
+    }
+    55.9%{
+        background-image: url(../images/characters/characters5-2.jpg);
+    }
+    100%{
+        background-image: url(../images/characters/characters5-1.jpg);
+    }
 }
 
 @media (max-width: 768px) {

@@ -910,7 +910,7 @@ button {
     position: relative;
     padding-bottom: 120px;
     margin-bottom: -65px;
-    background: url(../images/10coin/advantage-bg.jpg) #062359 no-repeat;
+    background: url(../images/advantage-bg.jpg) #062359 no-repeat;
     background-position: center center;
     color: #fff;
     overflow: hidden;
@@ -1127,7 +1127,7 @@ button {
     transform: translateX(-50%);
     width: 200px;
     height: 115px;
-    background: url(../images/10coin/characters/characters4.png) center top;
+    background: url(../images/characters/characters4.png) center top;
     background-size: cover;
 }
 

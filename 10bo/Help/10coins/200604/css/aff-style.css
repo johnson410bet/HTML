@@ -637,7 +637,145 @@ button {
     position: relative;
     margin-top: -30px;
     margin-bottom: -90px;
-    animation:fadeIn 2s forwards;
+}
+.wizard .lead {
+    width: 102%;
+    animation:fadeIn 2s ;
+}
+
+.wizard [class*="ele"] {
+    display: inline-block;
+    position: absolute;
+    width: auto;
+}
+
+.wizard .ele1,.wizard .ele11 {
+    top: 56%;
+    left: 10%;
+    width: 12.8%;
+    opacity: 0;
+    animation: eleUpDown 5s infinite;
+    animation-delay: 1.5s;
+}
+.wizard .ele11 {
+    animation: fadeOut-leftBottom 1s ;
+    animation-delay: .5s;
+}
+.wizard .ele2,.wizard .ele21 {
+    top: 32%;
+    left: 0%;
+    width: 12.3%;
+    opacity: 0;
+    animation: eleDownUp 4s infinite;
+    animation-delay: 1.5s;
+}
+.wizard .ele21 {
+    animation: fadeOut-left 1s ;
+    animation-delay: .5s;
+}
+.wizard .ele3,.wizard .ele31 {
+    top: 10%;
+    left: 12%;
+    width: 8.4%;
+    opacity: 0;
+    animation: eleUpDown 6s infinite;
+    animation-delay: 1.5s;
+}
+.wizard .ele31 {
+    animation: fadeOut-leftTop 1s ;
+    animation-delay: .5s;
+}
+.wizard .ele4,.wizard .ele41 {
+    top: 0%;
+    left: 42%;
+    width: 6.5%;
+    opacity: 0;
+    animation: eleDownUp 10s infinite;
+    animation-delay: 1.5s;;
+}
+.wizard .ele41 {
+    animation: fadeOut-top 1s ;
+    animation-delay: .5s;
+}
+.wizard .ele5,.wizard .ele51 {
+    left: 75%;
+    top: 1%;
+    width: 23.5%;
+    opacity: 0;
+    animation: eleUpDown 10s infinite;
+    animation-delay: 1.5s;;
+}
+.wizard .ele51 {
+    animation: fadeOut-rightTop 1s;
+    animation-delay: .5s;
+}
+.wizard .ele6,.wizard .ele61 {
+    top: 35%;
+    left: 75%;
+    width: 7%;
+    opacity: 0;
+    animation: eleDownUp 10s infinite;
+    animation-delay: 1.5s;;
+}
+.wizard .ele61 {
+    animation: fadeOut-right 1s ;
+    animation-delay: .5s;
+}
+.wizard .ele7,.wizard .ele71 {
+    top: 51%;
+    left: 82%;
+    width: 15.2%;
+    opacity: 0;
+    animation: eleUpDown 4s infinite;
+    animation-delay: 1.5s;
+}
+.wizard .ele71 {
+    animation: fadeOut-rightBottom 1s ;
+    animation-delay: .5s;
+}
+
+@keyframes eleUpDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(-15%);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateY(15%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes eleDownUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(15%);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-15%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 @keyframes fadeIn{
     0%{
@@ -647,90 +785,92 @@ button {
         opacity: 1;
     }
 }
-.wizard .lead {
-    width: 102%;
-}
-
-.wizard [class*="ele"] {
-    display: inline-block;
-    position: absolute;
-    width: auto;
-}
-
-.wizard .ele1 {
-    top: 56%;
-    left: 10%;
-    width: 12.8%;
-    animation: eleUpDown 5s infinite;
-}
-
-.wizard .ele2 {
-    top: 32%;
-    left: 0%;
-    width: 12.3%;
-    animation: eleDownUp 4s infinite;
-}
-
-.wizard .ele3 {
-    top: 10%;
-    left: 12%;
-    width: 8.4%;
-    animation: eleUpDown 6s infinite;
-}
-
-.wizard .ele4 {
-    top: 0%;
-    left: 42%;
-    width: 6.5%;
-    animation: eleDownUp 10s infinite;
-}
-
-.wizard .ele5 {
-    left: 75%;
-    top: 1%;
-    width: 23.5%;
-    animation: eleUpDown 10s infinite;
-}
-
-.wizard .ele6 {
-    top: 35%;
-    left: 75%;
-    width: 7%;
-    animation: eleDownUp 10s infinite;
-}
-
-.wizard .ele7 {
-    top: 51%;
-    left: 82%;
-    width: 15.2%;
-    animation: eleUpDown 4s infinite;
-}
-
-@keyframes eleUpDown {
+@keyframes fadeOut-top {
     0% {
-        transform: translateY(-15%);
-    }
-
-    50% {
-        transform: translateY(15%);
+        transform: translate(0,100%) scale(0);
+        opacity: 0;
     }
 
     100% {
-        transform: translateY(-15%);
+        transform: translate(0,0) scale(1);
+        opacity: 1;
     }
 }
-
-@keyframes eleDownUp {
+@keyframes fadeOut-rightTop {
     0% {
-        transform: translateY(15%);
-    }
-
-    50% {
-        transform: translateY(-15%);
+        transform: translate(-100%,100%) scale(0);
+        opacity: 0;
     }
 
     100% {
-        transform: translateY(15%);
+        transform: translate(0,0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes fadeOut-right {
+    0% {
+        transform: translate(-100%,0%) scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0,0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes fadeOut-rightBottom {
+    0% {
+        transform: translate(-100%,-100%) scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0,0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes fadeOut-bottom {
+    0% {
+        transform: translate(0%,-100%) scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0,0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes fadeOut-leftBottom {
+    0% {
+        transform: translate(100%,-100%) scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0,0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes fadeOut-left {
+    0% {
+        transform: translate(100%,0%) scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0,0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes fadeOut-leftTop {
+    0% {
+        transform: translate(100%,100%) scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0,0) scale(1);
+        opacity: 1;
     }
 }
 

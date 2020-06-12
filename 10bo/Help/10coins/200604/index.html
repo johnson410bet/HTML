@@ -14,23 +14,29 @@
 
 <body>
     <div class="coin-wrap">
-        <div class="swiper-wrap hide-sm">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="images/banner/10coins-fdb-1920x500.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/banner/10coins-fdb-1920x500.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/banner/10coins-fdb-1920x500.jpg" alt="">
-                    </div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
+        <div class="kv hide-sm">
+            <ul>
+                <li><img src="images/banner/10coins-fdb-1920x500.jpg" alt=""></li>
+                <li><img src="images/banner/10coins-fdb-1920x500.jpg" alt=""></li>
+                <li><img src="images/banner/10coins-fdb-1920x500.jpg" alt=""></li>
+            </ul>
         </div>
+        <!--<div class="swiper-wrap hide-sm">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/banner/10coins-fdb-1920x500.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/banner/10coins-fdb-1920x500.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/banner/10coins-fdb-1920x500.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div> -->
         <div class="swiper-wrap show-sm">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -226,7 +232,22 @@
             </div>
             <script>
             $(function() {
-                // kv
+                // kv-desktop
+                kvLength = $(".kv li").length;
+                n = 0;
+                $(".kv li").eq(n).addClass("active").siblings().removeClass("active");
+                autoplay = setInterval(function() {
+                    n++;
+                    if (n >= kvLength) {
+                        n = 0;
+                    }
+                    console.log(n);
+                    $(".kv li").eq(n).addClass("active").siblings().removeClass("active");
+
+                }, 3000)
+
+
+                // kv-mobile
                 var swiper = new Swiper(".swiper-container", {
                     slidesPerView: 1,
                     spaceBetween: 30,

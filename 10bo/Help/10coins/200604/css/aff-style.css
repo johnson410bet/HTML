@@ -436,6 +436,14 @@ button {
     height: 100%;
 }
 
+.kv ul li{
+    opacity: 0;
+    transition: 1s;
+}
+.kv ul li.active{
+    opacity: 1;
+}
+
 @media (max-width: 767px) {
     .kv {
         height: 35vw;

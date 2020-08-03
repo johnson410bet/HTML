@@ -13,39 +13,82 @@
 <body>
     <div class="section">
         <div class="container">
-            <div class="col-6">
-                <h3>文字</h3>
-                <h1>h1 - 32級字</h1>
-                <h2>h2 - 28級字</h2>
-                <h3>h3 - 24級字</h3>
-                <h4>h4 - 20級字</h4>
-                <h5>h5 - 16級字</h5>
-                <h6>h6 - 12級字</h6>
-                <p>p - 預設字級 14 px</p>
-            </div>
-            <div class="col-6">
-                <h3>按鈕</h3>
-                <button class="btn-primary">主按鈕</button>
-                <button class="btn-secondary">次按鈕</button>
-                <button class="btn-primary btn-popup">彈窗按鈕</button>
+            <div class="gutters">
+                <div class="row">
+                    <div class="col-6">
+                        <h3>文字</h3>
+                        <h1>h1 - 32級字</h1>
+                        <h2>h2 - 28級字</h2>
+                        <h3>h3 - 24級字</h3>
+                        <h4>h4 - 20級字</h4>
+                        <h5>h5 - 16級字</h5>
+                        <h6>h6 - 12級字</h6>
+                        <p>p - 預設字級 14 px</p>
+                    </div>
+                    <div class="col-6">
+                        <h3>文字顏色</h3>
+                        <p class="text-primary">主要色</p>
+                        <p class="text-secondary">次要色</p>
+                        <p class="text-link">連結色</p>
+                        <h3>文字顏色</h3>
+                        <p class="pd text-fff bg-primary">主要色</p>
+                        <p class="pd text-fff bg-secondary">次要色</p>
+                        <p class="pd text-fff bg-link">連結色</p>
+                    </div>
+                </div>
             </div>
             <div class="clear"></div>
+            <h3>按鈕</h3>
+            <button class="btn-primary">主按鈕</button>
+            <button class="btn-secondary">次按鈕</button>
+            <button class="btn-primary btn-popup">彈窗按鈕</button>
+            <button class="btn-primary btn-disable">不能使用按鈕</button>
+            <div class="clear"></div>
+            <h3>有間隔格線系統</h3>
             <div class="grid-demo">
                 <div class="row">
                     <div class="col-1">col-1</div>
                     <div class="col-11">col-11</div>
+                </div>
+                <div class="row">
                     <div class="col-2">col-2</div>
                     <div class="col-10">col-10</div>
+                </div>
+                <div class="row">
                     <div class="col-3">col-3</div>
                     <div class="col-9">col-9</div>
+                </div>
+                <div class="row">
                     <div class="col-4">col-4</div>
                     <div class="col-8">col-8</div>
+                </div>
+                <div class="row">
                     <div class="col-5">col-5</div>
                     <div class="col-7">col-7</div>
+                </div>
+                <div class="row">
                     <div class="col-6">col-6</div>
                     <div class="col-6">col-6</div>
+                </div>
+                <div class="row">
                     <div class="col-12">col-12</div>
                 </div>
+            </div>
+            <h3>無間隔格線系統</h3>
+            <div class="grid-demo gutters">
+                <div class="col-1">col-1</div>
+                <div class="col-11">col-11</div>
+                <div class="col-2">col-2</div>
+                <div class="col-10">col-10</div>
+                <div class="col-3">col-3</div>
+                <div class="col-9">col-9</div>
+                <div class="col-4">col-4</div>
+                <div class="col-8">col-8</div>
+                <div class="col-5">col-5</div>
+                <div class="col-7">col-7</div>
+                <div class="col-6">col-6</div>
+                <div class="col-6">col-6</div>
+                <div class="col-12">col-12</div>
             </div>
         </div>
     </div>

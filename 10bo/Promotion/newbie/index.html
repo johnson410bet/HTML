@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="https://www.sbo10.com/favicon.ico">
-    <title>範例頁</title>
+    <title>newbie</title>
     <script src="js/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,12 +13,21 @@
 <body>
     <div class="newbie">
         <div class="kv">
-            <div class="kv-text">
-                <div class="tt">新手好礼包</div>
-                <div class="td">高达3888元首存红利<br><span class="hide-sm">，</span>再享双重任务好礼</div>
+            <div class="scroll-down">
+                <a class="btn-scroll" href="#newbie-promo"><img src="images/link-arrow.svg" alt=""></a>
             </div>
+            <script>
+                $(function(){
+                    $(".btn-scroll").click(function(){
+                        href = $(this).attr('href');
+                        console.log(href);
+                        // $("html, body").animation({scrollTop:$(href).position().top},'slow');
+                        $('html, body').animate({scrollTop:$(href).position().top}, 'slow');
+                    })
+                })
+            </script>
         </div>
-        <div class="section newbie-promo">
+        <div class="section newbie-promo" id="newbie-promo">
             <div class="container">
                 <h1 class="color-primary">专享优惠</h1>
                 <div class="gutters">
@@ -28,8 +37,8 @@
                                 <div class="promo-item-img">
                                     <img src="images/10coins-fdb-730x320.jpg" alt="">
                                 </div>
-                                <div class="tt">十通币125%首存红利，最高1,110元</div>
-                                <div class="td">在开始，只要透过十通币进行首次存款至少100元(仅限娱乐场钱包)，并输入首存红利代码：10C125，即可享有100%首存红利，高达888元！首次存款金额达888，再送222元加码红利。</div>
+                                <div class="tt">新手任务 1 - 首存领优惠</div>
+                                <div class="td">10Bet十博为首次进行存款的玩家提供3种首存红利，存款时使用相对应红利代码，即享有高额再存红利！</div>
                                 <div class="promo-btn-wrap">
                                     <button class="btn btn-secondary">显示更多</button>
                                 </div>
@@ -42,8 +51,8 @@
                                 <div class="promo-item-img">
                                     <img src="images/10coins-fdb-730x320.jpg" alt="">
                                 </div>
-                                <div class="tt">十通币125%首存红利，最高1,110元</div>
-                                <div class="td">在开始，只要透过十通币进行首次存款至少100元(仅限娱乐场钱包)，并输入首存红利代码：10C125，即可享有100%首存红利，高达888元！首次存款金额达888，再送222元加码红利。</div>
+                                <div class="tt">新手任务 2- 投注体育领礼券</div>
+                                <div class="td">新会员好礼不间断，注册后七日内投注任意体育赛事，即可领取最高56元体育礼券，立即投注领好礼！</div>
                                 <div class="promo-btn-wrap">
                                     <button class="btn btn-secondary">显示更多</button>
                                 </div>
@@ -56,8 +65,8 @@
                                 <div class="promo-item-img">
                                     <img src="images/10coins-fdb-730x320.jpg" alt="">
                                 </div>
-                                <div class="tt">十通币125%首存红利，最高1,110元</div>
-                                <div class="td">在开始，只要透过十通币进行首次存款至少100元(仅限娱乐场钱包)，并输入首存红利代码：10C125，即可享有100%首存红利，高达888元！首次存款金额达888，再送222元加码红利。</div>
+                                <div class="tt">新手任务 3- 游玩娱乐场领红利</div>
+                                <div class="td">新会员好礼不间断，注册后七日内游玩娱乐场或真人娱乐场，即可领取最高86元娱乐场红利，立即前往娱乐场试试手气！</div>
                                 <div class="promo-btn-wrap">
                                     <button class="btn btn-secondary">显示更多</button>
                                 </div>

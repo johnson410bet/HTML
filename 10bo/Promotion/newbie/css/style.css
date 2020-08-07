@@ -440,27 +440,9 @@ h6 {
 .kv {
     position: relative;
     height: 600px;
-    background: #fff url(../images/newbie-bg.jpg) no-repeat center bottom;
+    background: #fff url(../images/newbie-bg.jpg) no-repeat center bottom/cover;
 }
 
-.kv-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0px 1px 8px rgba(0, 0, 0, .4)
-}
-
-.kv-text .tt {
-    font-size: 56px;
-}
-
-.kv-text .td {
-    font-size: 24px;
-}
 @media (max-width: 768px) {
     .kv{
         height: 80vh;
@@ -530,6 +512,42 @@ h6 {
         font-size: 12px;
     }
 }
+
+.scroll-down{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+.scroll-down>a{
+    display: inline-block;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background:#fff;
+    border-radius: 100%;
+    transform: rotate(90deg);
+}
+.scroll-down>a>img{
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    animation: scrollDown1 1s infinite;
+}
+@keyframes scrollDown1{
+    0%{
+        left: 45%;
+    }
+    50%{
+        left: 55%;
+    }
+    100%{
+        left: 45%;
+    }
+}
+
+
 
 
 /*-- css end --*/

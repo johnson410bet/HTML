@@ -440,12 +440,13 @@ h6 {
 .kv {
     position: relative;
     height: 600px;
-    background: #fff url(../images/newbie-bg.jpg) no-repeat center bottom/cover;
+    background: #fff url(../images/newbie-bg.jpg) no-repeat center bottom;
+    background-size:auto 100%;
 }
 
 @media (max-width: 768px) {
     .kv{
-        height: 80vh;
+        height: 90vh;
     }
 }
 .section {

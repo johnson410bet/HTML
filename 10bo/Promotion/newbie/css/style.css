@@ -1,61 +1,61 @@
 /*-- basic --*/
 
-* {
+.newbie * {
     box-sizing: border-box;
 }
 
-body {
+.newbie {
     font-family: Arial, Helvetica, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", sans-serif;
     font-size: 14px;
     margin: 0;
     background: #F2F5F8;
 }
 
-ol {
+.newbie ol {
     list-style-type: decimal;
     padding-left: 24px;
 }
 
-a {
+.newbie a {
     text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.newbie h1,
+.newbie h2,
+.newbie h3,
+.newbie h4,
+.newbie h5,
+.newbie h6 {
     margin-top: .5em;
     margin-bottom: .5em;
 }
 
-h1 {
+.newbie h1 {
     font-size: 32px;
 }
 
-h2 {
+.newbie h2 {
     font-size: 28px;
 }
 
-h3 {
+.newbie h3 {
     font-size: 24px;
 }
 
-h4 {
+.newbie h4 {
     font-size: 20px;
 }
 
-h5 {
+.newbie h5 {
     font-size: 16px;
 }
 
-h6 {
+.newbie h6 {
     font-size: 12px;
 }
 
 
-.btn {
+.newbie .btn {
     display: inline-block;
     position: relative;
     padding: 0 20px;
@@ -66,21 +66,21 @@ h6 {
     cursor: pointer;
 }
 
-.btn:hover {
+.newbie .btn:hover {
     color: #fff;
     background: #61ce8a;
 }
 
-.btn:active {
+.newbie .btn:active {
     color: #fff;
     background: #199d47;
 }
 
-.btn+.btn {
+.newbie .btn+.newbie .btn {
     margin-left: 4px;
 }
 
-.btn-primary {
+.newbie .btn-primary {
     height: 44px;
     line-height: 44px;
     background: #1DB955;
@@ -88,7 +88,7 @@ h6 {
     color: #FFFFFF;
 }
 
-.btn-secondary {
+.newbie .btn-secondary {
     height: 44px;
     line-height: 44px;
     border: 1px solid #1DB954;
@@ -97,65 +97,65 @@ h6 {
     background: transparent;
 }
 
-.btn-disable,
-.btn-disable:hover,
-.btn-disable:active {
+.newbie .btn-disable,
+.newbie .btn-disable:hover,
+.newbie .btn-disable:active {
     border-color: #bbb;
     background: #bbb;
     color: #fff;
     pointer-events: none;
 }
 
-.clear {
+.newbie .clear {
     display: block;
     clear: both;
 }
 
-.color-primary {
+.newbie .color-primary {
     color: #004f93;
 }
 
-.color-secondary {
+.newbie .color-secondary {
     color: #Fdd900;
 }
 
-.color-link {
+.newbie .color-link {
     color: #1DB955;
 }
 
-.color-fff {
+.newbie .color-fff {
     color: #fff;
 }
 
-.bg-primary {
+.newbie .bg-primary {
     background-color: #004f93;
 }
 
-.bg-secondary {
+.newbie .bg-secondary {
     background-color: #Fdd900;
 }
 
-.bg-link {
+.newbie .bg-link {
     background-color: #1DB955;
 }
 
-.pd {
+.newbie .pd {
     padding: 16px;
 }
 
-.show {
+.newbie .show {
     display: block !important;
 }
 
-.show-sm {
+.newbie .show-sm {
     display: none;
 }
 
-.hide-sm {
+.newbie .hide-sm {
     display: block;
 }
 
-.container {
+.newbie .container {
     width: 100%;
     padding-right: 16px;
     padding-left: 16px;
@@ -165,89 +165,91 @@ h6 {
 
 @media (max-width: 767px) {
 
-    .container {
+    .newbie .container {
         max-width: 720px;
         min-width: 320px;
     }
 
-    .h1-sm {
+    .newbie .h1-sm {
         font-size: 32px;
     }
 
-    .h2-sm {
+    .newbie .h2-sm {
         font-size: 28px;
     }
 
-    .h3-sm {
+    .newbie .h3-sm {
         font-size: 24px;
     }
 
-    .h4-sm {
+    .newbie .h4-sm {
         font-size: 20px;
     }
 
-    .h5-sm {
+    .newbie .h5-sm {
         font-size: 16px;
     }
 
-    .h6-sm {
+    .newbie .h6-sm {
         font-size: 12px;
     }
 
-    .btn-primary,
-    .btn-secondary {
+    .newbie .btn-primary,
+    .newbie .btn-secondary {
         height: 38px;
         line-height: 38px;
         font-size: 14px;
     }
 
-    .show-sm {
+    .newbie .show-sm {
         display: block;
     }
 
-    .hide-sm {
+    .newbie .hide-sm {
         display: none;
     }
 }
 
 @media (min-width: 1200px) {
-    .container {
+    .newbie .container {
         max-width: 1140px;
     }
 }
 
 /*-- grid system --*/
-.gutters {
+.newbie .gutters {
     margin-right: -16px;
     margin-left: -16px;
 }
 
-.grid-demo [class*="col-"] {
+.newbie .grid-demo [class*="col-"] {
     background-color: rgba(86, 61, 124, .15);
     border: 1px solid rgba(86, 61, 124, .2);
 }
 
-.row>[class*="col-"] {
+.newbie .row>[class*="col-"] {
     padding-top: 16px;
     padding-bottom: 16px;
 }
-.gutters:after,
-.row:after,
-.row-sm:after {
+
+.newbie .gutters:after,
+.newbie .row:after,
+.newbie .row-sm:after {
     content: "";
     display: block;
     clear: both;
 }
 
-.row+.row,.row-sm+.row-sm {
+.newbie .row+.row,
+.newbie .row-sm+.row-sm {
     margin-top: 16px;
 }
 
-.row-sm:after {
+.newbie .row-sm:after {
     display: none;
 }
 
-[class*="col-"] {
+.newbie [class*="col-"] {
     position: relative;
     float: left;
     width: 100%;
@@ -255,104 +257,104 @@ h6 {
     padding-left: 16px;
 }
 
-.col-1 {
+.newbie .col-1 {
     max-width: 8.333333%;
 }
 
-.col-2 {
+.newbie .col-2 {
     max-width: 16.666667%;
 }
 
-.col-3 {
+.newbie .col-3 {
     max-width: 25%;
 }
 
-.col-4 {
+.newbie .col-4 {
     max-width: 33.333333%;
 }
 
-.col-5 {
+.newbie .col-5 {
     max-width: 41.666667%;
 }
 
-.col-6 {
+.newbie .col-6 {
     max-width: 50%;
 }
 
-.col-7 {
+.newbie .col-7 {
     max-width: 58.333333%;
 }
 
-.col-8 {
+.newbie .col-8 {
     max-width: 66.666667%;
 }
 
-.col-9 {
+.newbie .col-9 {
     max-width: 75%;
 }
 
-.col-10 {
+.newbie .col-10 {
     max-width: 83.333333%;
 }
 
-.col-11 {
+.newbie .col-11 {
     max-width: 91.666667%;
 }
 
-.col-12 {
+.newbie .col-12 {
     max-width: 100%;
 }
 
 @media (max-width: 767px) {
-    .row-sm:after {
+    .newbie .row-sm:after {
         display: block;
     }
 
-    .col-sm-1 {
+    .newbie .col-sm-1 {
         max-width: 8.333333%;
     }
 
-    .col-sm-2 {
+    .newbie .col-sm-2 {
         max-width: 16.666667%;
     }
 
-    .col-sm-3 {
+    .newbie .col-sm-3 {
         max-width: 25%;
     }
 
-    .col-sm-4 {
+    .newbie .col-sm-4 {
         max-width: 33.333333%;
     }
 
-    .col-sm-5 {
+    .newbie .col-sm-5 {
         max-width: 41.666667%;
     }
 
-    .col-sm-6 {
+    .newbie .col-sm-6 {
         max-width: 50%;
     }
 
-    .col-sm-7 {
+    .newbie .col-sm-7 {
         max-width: 58.333333%;
     }
 
-    .col-sm-8 {
+    .newbie .col-sm-8 {
         max-width: 66.666667%;
     }
 
-    .col-sm-9 {
+    .newbie .col-sm-9 {
         max-width: 75%;
     }
 
-    .col-sm-10 {
+    .newbie .col-sm-10 {
         max-width: 83.333333%;
     }
 
-    .col-sm-11 {
+    .newbie .col-sm-11 {
         max-width: 91.666667%;
     }
 
-    .col-sm-12 {
+    .newbie .col-sm-12 {
         max-width: 100%;
     }
 }
@@ -360,7 +362,7 @@ h6 {
 /*-- grid system end --*/
 
 /*-- popup --*/
-.popup-wrap {
+.newbie .popup-wrap {
     display: none;
     position: fixed;
     top: 0;
@@ -370,11 +372,11 @@ h6 {
     z-index: 11;
 }
 
-.popup-wrap.active {
+.newbie .popup-wrap.active {
     display: block;
 }
 
-.popup-wrap .popup-bg {
+.newbie .popup-wrap .popup-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -383,7 +385,7 @@ h6 {
     background: rgba(0, 0, 0, .8);
 }
 
-.popup-wrap .popup-box {
+.newbie .popup-wrap .popup-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -398,7 +400,7 @@ h6 {
     overflow: scroll;
 }
 
-.popup-wrap .popup-close {
+.newbie .popup-wrap .popup-close {
     display: inline-block;
     position: absolute;
     top: 0px;
@@ -411,7 +413,7 @@ h6 {
     z-index: 99;
 }
 
-.popup-close:after {
+.newbie .popup-close:after {
     display: block;
     content: '';
     position: absolute;
@@ -425,7 +427,7 @@ h6 {
     background-size: contain;
 }
 
-.popup-content {
+.newbie .popup-content {
     display: inline-block;
     padding: 40px;
     border-radius: 8px;
@@ -437,27 +439,29 @@ h6 {
 
 /*-- popup end --*/
 
-.kv {
+.newbie .kv {
     position: relative;
     height: 600px;
-    background: #fff url(../images/newbie-bg.jpg) no-repeat center bottom;
-    background-size:auto 100%;
+    /*background: #fff url(../images/newbie-bg.jpg) no-repeat center bottom;*/
+    background: #fff url(https://content.100b108.com/resp/promotions/newbie/images/newbie-bg.jpg) no-repeat center bottom;
+    background-size: auto 100%;
 }
 
 @media (max-width: 768px) {
-    .kv{
-        height: 90vh;
+    .newbie .kv {
+        background-image: url(../images/NEWBE-MOBILE-04.jpg);
     }
 }
-.section {
+
+.newbie .section {
     padding: 20px 0;
 }
 
-.newbie-promo {
+.newbie .newbie-promo {
     text-align: center;
 }
 
-.newbie-promo .promo-item {
+.newbie .newbie-promo .promo-item {
     padding: 0 15px;
     border-radius: 5px;
     background: #fff;
@@ -465,30 +469,30 @@ h6 {
     line-height: 24px;
 }
 
-.newbie-promo .promo-item .promo-item-img {
+.newbie .newbie-promo .promo-item .promo-item-img {
     margin: 0 -15px;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
 }
 
-.newbie-promo .promo-item img {
+.newbie .newbie-promo .promo-item img {
     display: block;
     width: 100%;
 }
 
-.newbie-promo .promo-item .promo-btn-wrap {
+.newbie .newbie-promo .promo-item .promo-btn-wrap {
     padding: 20px 0;
     margin-top: 15px;
     border-top: 1px solid #E7E7E7;
     text-align: center;
 }
 
-.newbie-promo .promo-item .tt {
+.newbie .newbie-promo .promo-item .tt {
     margin-top: 15px;
     font-size: 18px;
 }
 
-.newbie-promo .promo-item .td {
+.newbie .newbie-promo .promo-item .td {
     margin: 10px 0;
     font-size: 14px;
     color: #999;
@@ -500,50 +504,55 @@ h6 {
 }
 
 @media (max-width: 768px) {
-    .newbie-promo {
+    .newbie .newbie-promo {
         text-align: center;
     }
 
-    .newbie-promo .promo-item .tt {
+    .newbie .newbie-promo .promo-item .tt {
         font-size: 16px;
     }
 
-    .newbie-promo .promo-item .td {
+    .newbie .newbie-promo .promo-item .td {
         height: auto;
         font-size: 12px;
     }
 }
 
-.scroll-down{
+.newbie .scroll-down {
     position: absolute;
     bottom: 5%;
     left: 50%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
 }
-.scroll-down>a{
+
+.newbie .scroll-down>a {
     display: inline-block;
     position: relative;
     width: 48px;
     height: 48px;
-    background:#fff;
+    background: #fff;
     border-radius: 100%;
     transform: rotate(90deg);
 }
-.scroll-down>a>img{
-    transform: translate(-50%,-50%);
+
+.newbie .scroll-down>a>img {
+    transform: translate(-50%, -50%);
     position: absolute;
     left: 45%;
     top: 50%;
     animation: scrollDown1 1s infinite;
 }
-@keyframes scrollDown1{
-    0%{
+
+@keyframes scrollDown1 {
+    0% {
         left: 45%;
     }
-    50%{
+
+    50% {
         left: 55%;
     }
-    100%{
+
+    100% {
         left: 45%;
     }
 }

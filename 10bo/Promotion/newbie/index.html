@@ -13,18 +13,17 @@
 <body>
     <div class="newbie">
         <div class="kv">
-            <div class="scroll-down">
-                <a class="btn-scroll" href="#newbie-promo"><img src="images/link-arrow.svg" alt=""></a>
+            <div class="scroll-down show-sm">
+                <a class="btn-scroll" href="#newbie-promo"><img src="https://content.100b108.com/resp/promotions/newbie/images/link-arrow.svg" alt=""></a>
             </div>
             <script>
-                $(function(){
-                    $(".btn-scroll").click(function(){
-                        href = $(this).attr('href');
-                        console.log(href);
-                        // $("html, body").animation({scrollTop:$(href).position().top},'slow');
-                        $('html, body').animate({scrollTop:$(href).position().top}, 'slow');
-                    })
+            $(function() {
+                $(".btn-scroll").click(function() {
+                    href = $(this).attr('href');
+                    console.log(href);
+                    $('html, body').animate({ scrollTop: $(href).position().top }, 'slow');
                 })
+            })
             </script>
         </div>
         <div class="section newbie-promo" id="newbie-promo">
@@ -76,6 +75,7 @@
                 </div>
             </div>
         </div>
+    </div>
 </body>
 
 </html>

@@ -13,18 +13,9 @@
 <body>
     <div class="newbie">
         <div class="kv">
-            <div class="scroll-down show-sm">
+            <!-- <div class="scroll-down show-sm">
                 <a class="btn-scroll" href="#newbie-promo"><img src="https://content.100b108.com/resp/promotions/newbie/images/link-arrow.svg" alt=""></a>
-            </div>
-            <script>
-            $(function() {
-                $(".btn-scroll").click(function() {
-                    href = $(this).attr('href');
-                    console.log(href);
-                    $('html, body').animate({ scrollTop: $(href).position().top }, 'slow');
-                })
-            })
-            </script>
+            </div> -->
         </div>
         <div class="section newbie-promo" id="newbie-promo">
             <div class="container">
@@ -76,6 +67,11 @@
             </div>
         </div>
     </div>
+    <script>
+        const vh = window.screen.height/2;
+        const kv = document.querySelector('.kv');
+        kv.style.height = vh + "px";    
+    </script>
 </body>
 
 </html>

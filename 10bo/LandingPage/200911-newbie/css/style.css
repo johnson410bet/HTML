@@ -67,7 +67,8 @@ h6 {
 .color-primary {
     color: #0A427F;
 }
-.color-secondary{
+
+.color-secondary {
     color: #fdd900;
 }
 
@@ -489,7 +490,8 @@ h6 {
     background-color: #0A427F;
     color: #fff;
 }
-.table-primary+.table-primary{
+
+.table-primary+.table-primary {
     margin-top: 20px;
 }
 
@@ -504,10 +506,12 @@ h6 {
     .table-primary {
         width: 100%;
     }
+
     .table-primary th {
-    /*background-color: rgba(0,0,0.3);*/
-}
-    .table-img{
+        /*background-color: rgba(0,0,0.3);*/
+    }
+
+    .table-img {
         padding-top: 20%;
         background-size: 80% auto;
     }
@@ -609,15 +613,6 @@ h6 {
     .tnc-section h5 {
         margin-bottom: 10px;
 
-    }
-
-    .sponsership-section .sponsership-item {
-        margin: 0 20px;
-    }
-
-
-    .sponsership-section .sponsership-item p {
-        font-size: 12px;
     }
 
     .footer p {

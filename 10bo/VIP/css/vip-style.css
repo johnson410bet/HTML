@@ -91,7 +91,7 @@ body .vip-wrap {
     line-height: 58px;
     background: #1DB955;
     border-radius: 29px;
-    border:none;
+    border: none;
     font-size: 16px;
     font-weight: normal;
     color: #FFFFFF;
@@ -830,19 +830,24 @@ body .vip-wrap {
         margin-top: 10px;
     }
 }
-.vip-private-wrap .btn-primary{
-    background:#C9A14C;
+
+.vip-private-wrap .btn-primary {
+    background: #C9A14C;
 }
-.vip-private-wrap .btn-secondary{
-    border-color:#C9A14C;
-    color:#C9A14C;
+
+.vip-private-wrap .btn-secondary {
+    border-color: #C9A14C;
+    color: #C9A14C;
 }
-.vip-private-wrap .btn-primary:hover{
-    background:#F0CC7F;
+
+.vip-private-wrap .btn-primary:hover {
+    background: #F0CC7F;
 }
-.vip-private-wrap .btn-secondary:hover{
-    background:#C9A14C;
+
+.vip-private-wrap .btn-secondary:hover {
+    background: #C9A14C;
 }
+
 .vip-private-wrap .vip-kv {
     text-align: left;
     background-image: url(https://content.100b108.com/resp/vip/kv-private.jpg);
@@ -871,6 +876,17 @@ body .vip-wrap {
 
 .vip-private-wrap .vip-kv .kv-info .kv-title {
     margin-bottom: 10px;
+}
+
+.vip-private-wrap .vip-kv .btn-secondary {
+    line-height: 56px;
+    height: 56px;
+    border-radius: 29px;
+    border-width: 2px;
+}
+
+.vip-private-wrap .vip-kv .btn+.btn {
+    margin-left: 10px;
 }
 
 @media (max-width: 768px) {
@@ -995,7 +1011,7 @@ body .vip-wrap {
     line-height: 44px;
 }
 
-.vip-promotion .btn-secondary{
+.vip-promotion .btn-secondary {
     height: 42px;
     line-height: 42px;
 }
@@ -1037,14 +1053,15 @@ body .vip-wrap {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#A57729), to(#E5DB8A));
     background-image: linear-gradient(0deg, #A57729 0%, #E5DB8A 100%);
 }
-.vip-leaderboard:after{
+
+.vip-leaderboard:after {
     content: "";
     position: absolute;
     display: block;
     bottom: -3px;
     height: 78px;
     width: 100%;
-    background:#FFF5DF url(../images/bg-wave.png) center bottom no-repeat;
+    background: #FFF5DF url(../images/bg-wave.png) center bottom no-repeat;
     background-size: cover;
 }
 
@@ -1304,45 +1321,152 @@ body .vip-wrap {
 
 /*-- block end --*/
 /*-- CNY theme --*/
-.vip-cny-theme .vip-kv{
+.vip-cny-theme .vip-kv {
     height: 750px;
     text-align: center;
-    background-image:url(../images/kv-private-cny.jpg);
+    background-image: url(../images/kv-private-cny.jpg);
     background-color: #B50000;
 }
-.vip-cny-theme .vip-kv .kv-info{
+
+.vip-cny-theme .vip-kv .kv-info {
     margin-bottom: 0;
     vertical-align: bottom;
 }
-.vip-cny-theme .vip-promotion{
+
+.vip-cny-theme .vip-promotion {
     background: #B50000;
 }
-.vip-cny-theme .vip-promotion-categories{
-    color:#fff;
+
+.vip-cny-theme .vip-promotion-categories {
+    color: #fff;
 }
-.vip-cny-theme .vip-promotion-categories li.active{
-    color:#FFEBC0;
+
+.vip-cny-theme .vip-promotion-categories li.active {
+    color: #FFEBC0;
 }
-.vip-cny-theme .vip-promotion-categories li:after{
-    border-color:#FFEBC0;
+
+.vip-cny-theme .vip-promotion-categories li:after {
+    border-color: #FFEBC0;
 }
-.vip-cny-theme .vip-promotion:before{
+
+.vip-cny-theme .vip-promotion:before {
     content: none;
 }
-.vip-cny-theme .vip-promotion .section-tt{
+
+.vip-cny-theme .vip-promotion .section-tt {
     display: none;
 }
-@media (max-width: 768px){
-    .vip-cny-theme .vip-kv{
+
+@media (max-width: 768px) {
+    .vip-cny-theme .vip-kv {
         height: 290px;
         background-position: center top;
         background-size: auto 90%;
         background-color: #B50000;
     }
 }
+
 /*-- CNY theme end --*/
 
+/*-- fairies video and photos --*/
+.fairies-photos {
+    opacity: 0;
+}
 
+.fairies-photos.fadeIn {
+    -webkit-animation: photoFadeIn .5s forwards;
+    animation: photoFadeIn .5s forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes photoFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes photoFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fairies-photos:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.fairies-photos .photos-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fairies-photos .photos-img:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 18px;
+    background: transparent url(https://content.100b108.com/fairies/images/Icon/Fairies-logo.svg) no-repeat center center;
+    background-size: auto 100%;
+    z-index: 1;
+}
+
+.fairies-photos .photos-img img {
+    display: block;
+    width: 100%;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.fairies-photos .photos-img:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.fairies-video video{
+    display: block;
+    position: absolute;
+    top: 0;
+    left:50%;
+    height: 100%;
+    width: auto;
+    transform: translateX(-50%);
+    cursor: default;
+}
+
+@media (max-width: 768px) {
+    .fairies-video video {
+        position: static;
+        width: 100%;
+        height: auto;
+        transform: none;
+    }
+    .fairies-photos .fairies-video img{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: auto;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
+
+/*-- fairies video and photos end --*/
 
 
 

@@ -1,10 +1,13 @@
 /*-- basic --*/
+body {
+    margin: 0;
+}
 
 .vip-wrap * {
     box-sizing: border-box;
 }
 
-body .vip-wrap {
+.vip-wrap {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", sans-serif;
@@ -219,6 +222,10 @@ body .vip-wrap {
 /*-- basic end --*/
 
 /*-- grid system --*/
+.vip-wrap .no-outside-gutters {
+    margin: -11px -15px;
+}
+
 .vip-wrap .grid:after {
     content: "";
     display: block;
@@ -240,7 +247,8 @@ body .vip-wrap {
     position: relative;
     float: left;
     width: 100%;
-    padding: 15px;
+    padding: 11px 15px;
+    box-sizing: border-box;
 }
 
 .vip-wrap .col-1 {
@@ -293,6 +301,7 @@ body .vip-wrap {
 
 
 @media (max-width: 768px) {
+
     .vip-wrap [class*="col-"] {
         padding: 5px;
     }
@@ -890,16 +899,38 @@ body .vip-wrap {
 }
 
 @media (max-width: 768px) {
+    .vip-private-wrap .vip-kv {
+        text-align: center;
+    }
+
+    .vip-private-wrap .vip-kv:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #001328;
+        opacity: .6;
+    }
+
     .vip-private-wrap .vip-kv .kv-info {
         margin-bottom: 0px;
+    }
+
+    .vip-private-wrap .vip-kv .btn-secondary {
+        height: 38px;
+        line-height: 38px;
+        vertical-align: top;
     }
 }
 
 .vip-promotion {
     position: relative;
-    background: #FFF5DF;
+    background: #FFEEC8;
 }
 
+.vip-fairies:before,
 .vip-promotion:before {
     content: "";
     position: absolute;
@@ -1369,51 +1400,25 @@ body .vip-wrap {
 /*-- CNY theme end --*/
 
 /*-- fairies video and photos --*/
-.fairies-photos {
-    opacity: 0;
+.vip-fairies {
+    position: relative;
+    background: #FFF5DF;
 }
 
-.fairies-photos.fadeIn {
-    -webkit-animation: photoFadeIn .5s forwards;
-    animation: photoFadeIn .5s forwards;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-}
-
-@-webkit-keyframes photoFadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes photoFadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.fairies-photos:after {
+.vip-fairies-photos:after {
     content: "";
     display: block;
     clear: both;
 }
 
-.fairies-photos .photos-img {
+.vip-fairies-photos .photos-img {
     position: relative;
     overflow: hidden;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.fairies-photos .photos-img:before {
+.vip-fairies-photos .photos-img:before {
     content: "";
     position: absolute;
     top: 10px;
@@ -1425,37 +1430,64 @@ body .vip-wrap {
     z-index: 1;
 }
 
-.fairies-photos .photos-img img {
+.vip-fairies-photos .photos-img img {
     display: block;
     width: 100%;
     -webkit-transition: .3s;
     transition: .3s;
 }
 
-.fairies-photos .photos-img:hover img {
+.vip-fairies-photos .photos-img:hover img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.fairies-video video{
+.vip-fairies-video video {
     display: block;
     position: absolute;
     top: 0;
-    left:50%;
+    left: 50%;
     height: 100%;
     width: auto;
     transform: translateX(-50%);
     cursor: default;
 }
 
+.vip-fairies-mobile {
+    display: none;
+    overflow-y: hidden;
+}
+
+.vip-fairies-mobile .vip-fairies-scroll-x {
+    width: 450%;
+}
+
+.vip-fairies-mobile .photos-img {
+    float: left;
+    padding-left: 10px;
+    width: 20%;
+}
+
+.vip-fairies-mobile .photos-img>img {
+    border-radius: 5px;
+}
+
 @media (max-width: 768px) {
-    .fairies-video video {
+    .vip-fairies-photos {
+        display: none;
+    }
+
+    .vip-fairies-mobile {
+        display: block;
+    }
+
+    /*.vip-fairies-video video {
         position: static;
         width: 100%;
         height: auto;
         transform: none;
     }
-    .fairies-photos .fairies-video img{
+    .vip-fairies-photos .vip-fairies-video img{
         position: absolute;
         top: 0;
         left: 50%;
@@ -1463,7 +1495,7 @@ body .vip-wrap {
         height: auto;
         transform: translateX(-50%);
         z-index: -1;
-    }
+    }*/
 }
 
 /*-- fairies video and photos end --*/

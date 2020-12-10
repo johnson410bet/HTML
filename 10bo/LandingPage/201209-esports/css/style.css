@@ -1,5 +1,9 @@
 /*-- basic --*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -7,7 +11,7 @@
 body {
     font-family: Arial, Helvetica, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", sans-serif;
     font-size: 14px;
-    background: #063060;
+    background: #EFF5FC;
 }
 
 ol {
@@ -117,6 +121,19 @@ h6 {
         max-width: 720px;
         min-width: 320px;
     }
+
+    .show-sm {
+        display: block;
+    }
+
+    .hide-sm {
+        display: none;
+    }
+
+    .mobile-clear {
+        display: block;
+        clear: both;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -124,6 +141,7 @@ h6 {
         max-width: 1140px;
     }
 }
+/*-- basic end --*/
 
 /*-- grid system --*/
 .no-gutters {
@@ -193,6 +211,10 @@ h6 {
 }
 
 @media (max-width: 767px) {
+    [class*="col-"] {
+        padding: 5px;
+    }
+
     .col-sm-1 {
         max-width: 8.333333%;
     }
@@ -241,8 +263,9 @@ h6 {
         max-width: 100%;
     }
 }
+/*-- grid system end --*/
 
-/*-- block --*/
+/*-- right side contact --*/
 .right-side {
     position: fixed;
     top: 50%;
@@ -295,75 +318,120 @@ h6 {
     color: #0a427f;
     box-shadow: none;
 }
+/*-- right side contact end --*/
 
+/*-- kv --*/
+.kv {
+    position: relative;
+    height: 370px;
+    text-align: center;
+    background: #0072d3 url(../images/Landing-eSports-1920x370.jpg) no-repeat center center;
+    background-size: auto 100%;
+}
+
+@media (max-width: 768px) {
+    .kv {
+        padding-bottom: 40%;
+        height: 0;
+        background-image: url(../images/Landing-eSports-768x290.jpg);
+    }
+}
+
+/*-- kv end --*/
+
+/*-- header --*/
+.header {
+    background-color: #004183;
+}
+
+.topnav {
+    position: relative;
+    height: 50px;
+}
+
+.topnav .navlist {
+    float: right;
+}
+
+.navlist a {
+    float: left;
+    display: block;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 0px 12px;
+    margin: 13px 0px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+}
+.navlist a+a{
+    border-left: 1px solid rgba(255, 255, 255, .3);
+}
+
+.logo {
+    height: 32px;
+    float: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*-- header end --*/
+
+/*-- section --*/
 .section {
     position: relative;
-    padding: 40px 0;
+    margin: 40px 0;
     text-align: center;
+    color:#59748A;
+}
+
+.section h2{
+    margin-bottom: 20px;
+    color: #0066B7;
+}
+
+.section p{
+    line-height: 24px;
 }
 
 .section img {
     max-width: 100%;
 }
 
-.top-section {
-    position: relative;
-    height: 370px;
-    text-align: center;
-    background: #020819 url(../images/casino-aviacashback02-1920x370.jpg) no-repeat center center;
-    background-size: auto 100%;
-}
-
-@media (max-width: 768px) {
-    .top-section {
-        padding-bottom: 40%;
-        height: 0;
-        background-image:url(../images/casino-aviacashback02-768x290.jpg);
-    }
-}
-
-.second-section {
-    padding: 40px 0;
-    text-align: center;
-    color: #fff;
-}
-
-.second-section+.second-section {
-    padding-top: 0px;
-}
-
-.second-section .promo-wrap {
+.section .promo-wrap {
     margin: 20px -15px 0;
 }
 
-.second-section .promo-wrap:after {
+.section .promo-wrap:after {
     content: "";
     display: block;
     clear: both;
 }
 
-.second-section .promo-wrap .item {
+.section .promo-wrap .item {
     padding: 0px 15px 20px;
-    background: #004481;
+    background: #fff;
     /*min-height: 410px;*/
     text-align: left;
     border-radius: 10px;
     overflow: hidden;
     transition: .3s;
+    box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1);
 }
 
-.second-section .promo-wrap .item:hover {
+.section .promo-wrap .item:hover {
     box-shadow: 0 10px 50px rgba(0, 0, 0, .2);
     transform: translateY(-5px);
 }
 
-.second-section .promo-wrap .item .img {
+.section .promo-wrap .item .img {
     position: relative;
     margin: 0 -15px;
     padding-bottom: 76%;
 }
 
-.second-section .promo-wrap .item .img>img {
+.section .promo-wrap .item .img>img {
     position: absolute;
     top: 0;
     left: 50%;
@@ -372,100 +440,87 @@ h6 {
     width: auto;
 }
 
-.second-section .promo-wrap .item h4 {
+.section .promo-wrap .item h4 {
     margin-top: 10px;
     line-height: 24px;
+    color: #59748A;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.second-section .promo-wrap .item p {
+.section .promo-wrap .item p {
     margin-top: 5px;
     line-height: 24px;
-    opacity: .5;
+    color: #97A4B3;
 }
 
-.second-section .promo-wrap .item .btn-secondary {
+.section .promo-wrap .item .btn-secondary {
     margin-top: 25px;
 }
 
-.second-section .promo-wrap-2 .item {
+.section .promo-wrap-2 .item {
     color: #000;
     background-color: #fff;
 }
 
-.second-section .promo-wrap-2 .item .img {
+.section .promo-wrap-2 .item .img {
     padding-bottom: 38%;
 }
 
-.second-section .promo-wrap-2 .item h4 {}
+@media (max-width: 768px) {
+    .section {
+        margin: 30px 0;
+    }
 
-.second-section .promo-wrap-2 .item p {}
+    .section h2 {
+        font-size: 20px;
+    }
 
+    .section .promo-wrap {
+        margin: 0 -10px;
+    }
+
+    .section .promo-wrap .item {
+        padding: 0 10px 15px;
+    }
+
+    .section .promo-wrap .item h5 {
+        font-size: 14px;
+    }
+
+    .section .promo-wrap .item p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .section .promo-wrap .item .btn-secondary {
+        margin-top: 14px;
+        height: 36px;
+        line-height: 36px;
+    }
+
+}
+
+/*-- section end --*/
+
+/*-- footer --*/
 .footer .container {
     border-top: 1px solid rgba(255, 255, 255, .2);
 }
 
 .footer {
     text-align: center;
+    background-color: #596472;
 }
 
 .footer p {
     display: inline-block;
-    width: 80%;
     margin: 20px 0;
-    color: #fff;
-    opacity: .3;
+    color: rgba(255, 255, 255, .5);
     line-height: 24px;
 }
 
 @media (max-width: 768px) {
-    [class*="col-"] {
-        padding: 5px;
-    }
-
-    .show-sm {
-        display: block;
-    }
-
-    .hide-sm {
-        display: none;
-    }
-
-    .mobile-clear {
-        display: block;
-        clear: both;
-    }
-
-    .second-section {
-        padding-top: 23px;
-    }
-
-    .second-section h2 {
-        font-size: 20px;
-    }
-
-    .second-section .promo-wrap {
-        margin: 20px -10px 0;
-    }
-
-    .second-section .promo-wrap .item {
-        padding: 0 10px 15px;
-    }
-
-    .second-section .promo-wrap .item h5 {
-        font-size: 14px;
-    }
-
-    .second-section .promo-wrap .item p {
-        font-size: 12px;
-        line-height: 22px;
-    }
-
-    .second-section .promo-wrap .item .btn-secondary {
-        margin-top: 14px;
-        height: 36px;
-        line-height: 36px;
-    }
-
     .footer p {
         width: 100%;
         font-size: 12px;
@@ -473,6 +528,10 @@ h6 {
     }
 
 }
+
+/*-- footer end --*/
+
+
 
 
 

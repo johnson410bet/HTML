@@ -12,16 +12,127 @@
 
 <body>
     <div class="esports">
-        <div class="esports-menu">
+        <div class="esports-menu show-sm">
             <ul>
                 <li class="active"><span>TES</span></li>
                 <li><span>WB.TS</span></li>
                 <li><span>Aster</span></li>
             </ul>
         </div>
+        <div class="esports-menu-desktop hide-sm">
+            <div class="container">
+                <ul>
+                    <li class="tes active">
+                        <i><img src="images/TeamLOGO/TES@2x.png" alt=""></i>
+                        <span>
+                            <span>英雄联盟</span>
+                            <h3>TES</h3>
+                        </span>
+                    </li>
+                    <li class="wbts">
+                        <i><img src="images/TeamLOGO/WB.TS@2x.png" alt=""></i>
+                        <span>
+                            <span>王者榮耀</span>
+                            <h3>WB.TS</h3>
+                        </span>
+                    </li>
+                    <li class="aster">
+                        <i><img src="images/TeamLOGO/Aster@2x.png" alt=""></i>
+                        <span>
+                            <span>DOTA 2</span>
+                            <h3>Aster</h3>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="section">
             <div class="container">
-                <div class="games-team">
+                <div class="grid no-outside-gutters">
+                    <div class="col-7 col-sm-12">
+                        <div class="team-stats">
+                            <div class="team-bg">
+                                <img class="hide-sm" src="images/Team/TES-d.jpg" alt="">
+                                <img class="show-sm" src="images/Team/TES-m.jpg" alt="">
+                            </div>
+                            <ul class="stats-info">
+                                <li>
+                                    <span><i><img src="images/TeamLOGO/TES@2x.png" alt=""></i></span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>英雄联盟</span>
+                                        <h3>TES</h3>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>战绩</span>
+                                        <h3>86胜/43败</h3>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>胜率</span>
+                                        <h3>67%</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 hide-sm">
+                        <div class="section-title">比赛记录<a class="more" href="record.html">显示更多</a></div>
+                        <div class="winning-record award-open">
+                            <div class="grid no-gutters">
+                                <div class="col-7">
+                                    <div class="games-winning">负</div>
+                                    <div class="games-info">
+                                        <div class="leagues">S10 世界总决赛-淘汰赛</div>
+                                        <div class="time">10/25 18:00</div>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="cscore">
+                                        <div class="team-name"><i><img src="images/tes.png" alt=""></i><span>TES</span></div>
+                                        <div class="game-score">3:2</div>
+                                        <div class="team-name"><i><img src="images/fnc.png" alt=""></i><span>FNC</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="award-table" cellspacing="0">
+                                <tr>
+                                    <th>排名</th>
+                                    <th>用户名</th>
+                                    <th>下注盈利奖金</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>awe***awe</td>
+                                    <td>100,000元</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>awe***awe</td>
+                                    <td>100,000元</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>awe***awe</td>
+                                    <td>100,000元</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>awe***awe</td>
+                                    <td>100,000元</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>awe***awe</td>
+                                    <td>100,000元</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -29,22 +140,85 @@
             <div class="container">
                 <div class="section-title">未来比赛</div>
             </div>
-            <div class="games-list"></div>
+            <div class="overview">
+                <ul>
+                    <li>
+                        <div class="scoreboard">
+                            <div class="time">10/25 18:00</div>
+                            <div class="leagues">S10世界总决赛-淘汰赛</div>
+                            <div class="cscore">
+                                <div class="team-name"><i><img src="images/tes.png" alt=""></i><span>TES</span></div>
+                                <div class="vs"></div>
+                                <div class="team-name"><i><img src="images/fnc.png" alt=""></i><span>FNC</span></div>
+                            </div>
+                            <a class="more" href="">立即投注<i></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="scoreboard">
+                            <div class="time">10/25 18:00</div>
+                            <div class="leagues">S10世界总决赛-淘汰赛</div>
+                            <div class="cscore">
+                                <div class="team-name"><i><img src="images/tes.png" alt=""></i><span>TES</span></div>
+                                <div class="vs"></div>
+                                <div class="team-name"><i><img src="images/fnc.png" alt=""></i><span>FNC</span></div>
+                            </div>
+                            <a class="more" href="">立即投注<i></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="scoreboard">
+                            <div class="time">10/25 18:00</div>
+                            <div class="leagues">S10世界总决赛-淘汰赛</div>
+                            <div class="cscore">
+                                <div class="team-name"><i><img src="images/tes.png" alt=""></i><span>TES</span></div>
+                                <div class="vs"></div>
+                                <div class="team-name"><i><img src="images/fnc.png" alt=""></i><span>FNC</span></div>
+                            </div>
+                            <a class="more" href="">立即投注<i></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="scoreboard">
+                            <div class="time">10/25 18:00</div>
+                            <div class="leagues">S10世界总决赛-淘汰赛</div>
+                            <div class="cscore">
+                                <div class="team-name"><i><img src="images/tes.png" alt=""></i><span>TES</span></div>
+                                <div class="vs"></div>
+                                <div class="team-name"><i><img src="images/fnc.png" alt=""></i><span>FNC</span></div>
+                            </div>
+                            <a class="more" href="">立即投注<i></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="scoreboard">
+                            <div class="time">10/25 18:00</div>
+                            <div class="leagues">S10世界总决赛-淘汰赛</div>
+                            <div class="cscore">
+                                <div class="team-name"><i><img src="images/tes.png" alt=""></i><span>TES</span></div>
+                                <div class="vs"></div>
+                                <div class="team-name"><i><img src="images/fnc.png" alt=""></i><span>FNC</span></div>
+                            </div>
+                            <a class="more" href="">立即投注<i></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="section">
+        <div class="section show-sm">
             <div class="container">
-                <div class="section-title">比赛记录<a class="more" href="news-detail.html">显示更多</a></div>
-                <div class="winning-record">
+                <div class="section-title">比赛记录<a class="more" href="record.html">显示更多</a></div>
+                <div class="winning-record award-open">
                     <div class="no-gutters">
                         <div class="col-7">
                             <div class="games-winning">负</div>
                             <div class="games-info">
-                                <div class="games-name">S10 世界总决赛-淘汰赛</div>
-                                <div class="games-time">10/25 18:00</div>
+                                <div class="leagues">S10 世界总决赛-淘汰赛</div>
+                                <div class="time">10/25 18:00</div>
                             </div>
                         </div>
                         <div class="col-5">
-                            <div class="games-info-2">
+                            <div class="cscore">
                                 <div class="team-name"><i><img src="images/tes.png" alt=""></i><span>TES</span></div>
                                 <div class="game-score">3:2</div>
                                 <div class="team-name"><i><img src="images/fnc.png" alt=""></i><span>FNC</span></div>
@@ -88,23 +262,39 @@
         </div>
         <div class="section">
             <div class="container">
-                <div class="section-title">最新消息<a class="more" href="news-detail.html">显示更多</a></div>
-                <div class="grid no-gutters">
-                    <div class="col-sm-12">
-                        <div class="news-block">
-                            <div class="news-photo"><img src="https://esportbet.b-cdn.net/wp-content/uploads/2018/04/lol.jpg" alt=""></div>
+                <div class="section-title">最新消息<a class="more" href="article.html">显示更多</a></div>
+                <div class="grid sm-no-gutters no-outside-gutters">
+                    <div class="col-6 col-sm-12">
+                        <a class="news-block" href="article.html">
+                            <div class="news-photo"><img src="https://ol.3dmgame.com/uploads/images/gamenews/20200915/1600154871_906681.jpg" alt=""></div>
                             <div class="news-info">
                                 <div class="news-subject">LPL名人当首届候选人名单公布，微笑、阿布、米勒入选</div>
                                 <div class="news-time">2020/12/02 10:56</div>
                             </div>
-                        </div>
-                        <div class="news-block">
-                            <div class="news-photo"><img src="https://esportbet.b-cdn.net/wp-content/uploads/2018/04/lol.jpg" alt=""></div>
+                        </a>
+                        <a class="news-block" href="article.html">
+                            <div class="news-photo"><img src="https://ol.3dmgame.com/uploads/images/gamenews/20200915/1600154871_906681.jpg" alt=""></div>
                             <div class="news-info">
                                 <div class="news-subject">LPL名人当首届候选人名单公布，微笑、阿布、米勒入选</div>
                                 <div class="news-time">2020/12/02 10:56</div>
                             </div>
-                        </div>
+                        </a>
+                    </div>
+                    <div class="col-6 hide-sm">
+                        <a class="news-block" href="article.html">
+                            <div class="news-photo"><img src="https://ol.3dmgame.com/uploads/images/gamenews/20200915/1600154871_906681.jpg" alt=""></div>
+                            <div class="news-info">
+                                <div class="news-subject">LPL名人当首届候选人名单公布，微笑、阿布、米勒入选</div>
+                                <div class="news-time">2020/12/02 10:56</div>
+                            </div>
+                        </a>
+                        <a class="news-block" href="article.html">
+                            <div class="news-photo"><img src="https://ol.3dmgame.com/uploads/images/gamenews/20200915/1600154871_906681.jpg" alt=""></div>
+                            <div class="news-info">
+                                <div class="news-subject">LPL名人当首届候选人名单公布，微笑、阿布、米勒入选</div>
+                                <div class="news-time">2020/12/02 10:56</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>

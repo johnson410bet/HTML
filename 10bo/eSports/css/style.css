@@ -152,8 +152,8 @@ body {
     .esports .container {
         max-width: 720px;
         min-width: 320px;
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 12px;
+        padding-left: 12px;
     }
 
     .esports .h1-sm {
@@ -211,6 +211,10 @@ body {
 /*-- grid system --*/
 .esports .no-outside-gutters {
     margin: -11px -15px;
+}
+
+.esports .grid {
+    /*margin: -11px -15px;*/
 }
 
 .esports .grid:after {
@@ -288,6 +292,20 @@ body {
 
 
 @media (max-width: 768px) {
+    .esports .no-outside-gutters {
+        margin: -5px;
+    }
+
+    .esports .sm-no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .esports .sm-no-gutters>.col,
+    .esports .sm-no-gutters>[class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
 
     .esports [class*="col-"] {
         padding: 5px;
@@ -353,8 +371,26 @@ body {
 .esports .section .section-title {
     position: relative;
     margin-bottom: 5px;
+    color: #0066B7;
     font-size: 20px;
+    font-weight: bold;
     line-height: 24px;
+}
+
+@media (min-width: 768px) {
+    .esports .section {
+        padding: 16px 0;
+    }
+
+    .esports .section .section-title {
+        margin-bottom: 12px;
+        font-size: 24px;
+    }
+
+    .esports-contant-page .container {
+        position: relative;
+        max-width: 730px;
+    }
 }
 
 .esports .section .section-title .more {
@@ -363,9 +399,162 @@ body {
     right: 0;
     padding-right: 12px;
     font-size: 14px;
-    color: #1DB954;
-    background: url(https://content.100b108.com/resp/sponsorship/images/icon/link-arrow.svg) no-repeat right center;
+    color: #97A4B3;
+    background: url(../images/arrow-gray.svg) no-repeat right center;
     background-size: auto 50%;
+}
+
+
+.cscore {
+    font-size: 12px;
+    color: #97A4B3;
+    text-align: center;
+}
+
+.cscore .game-score {
+    display: inline-block;
+    font-size: 20px;
+    color: #cad0d7;
+    vertical-align: middle;
+}
+
+.cscore .vs {
+    display: inline-block;
+    width: 37px;
+    height: 70px;
+    background: url(../images/vs.png) no-repeat center center / 100% auto;
+    vertical-align: middle;
+}
+
+.cscore .team-name {
+    display: inline-block;
+    width: 35%;
+    vertical-align: middle;
+}
+
+.cscore .team-name span {
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.cscore i {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.cscore i img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/*header*/
+.esports-header {
+    position: relative;
+    height: 46px;
+    line-height: 46px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1);
+    font-size: 18px;
+    color: #59748A;
+}
+
+.esports-header .header-back {
+    display: inline-block;
+    position: absolute;
+    left: 12px;
+    height: 100%;
+}
+
+.esports-header .header-back span {
+    display: none;
+    color: #C4CDD5;
+    vertical-align: middle;
+}
+
+.esports-header .header-back i {
+    display: inline-block;
+    width: 12px;
+    height: 21px;
+    margin-right: 12px;
+    background: url(../images/arrow-gray.svg) no-repeat right center;
+    background-size: cover;
+    transform: rotate(180deg);
+    vertical-align: middle;
+}
+.esports-header .team-select{
+    display: inline-block;
+}
+.esports-header .team-select i {
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    margin-left: 5px;
+    background: url(../images/arrow-gray.svg) no-repeat right center;
+    background-size: cover;
+    transform: rotate(90deg);
+}
+
+.esports-header.open-select .team-select i {
+    transform: rotate(-90deg);
+}
+
+.esports-header .team-select ul {
+    display: none;
+    position: absolute;
+    top: 54px;
+    right: 0;
+    left: 0;
+    padding: 0 12px;
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    font-size: 14px;
+    text-align: center;
+    z-index: 11;
+    box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1);
+}
+
+.esports-header.open-select .team-select ul {
+    display: block;
+}
+
+.esports-header .team-select ul li {
+    line-height: 52px;
+}
+
+.esports-header .team-select ul li+li {
+    border-top: 1px solid #E0E4E9;
+}
+
+@media (min-width: 768px) {
+    .esports-header {
+        height: 58px;
+        line-height: 58px;
+        background-color: transparent;
+        font-size: 24px;
+        box-shadow: none;
+    }
+
+    .esports-header .header-back span {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .esports-header .team-select ul {
+        width: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 /*menu*/
@@ -373,6 +562,7 @@ body {
     height: 46px;
     line-height: 46px;
     background: #fff;
+    color:#97A4B3;
     box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1);
 }
 
@@ -409,10 +599,212 @@ body {
     left: 0%;
 }
 
+.esports-menu-desktop {
+    margin-bottom: 32px;
+    background: linear-gradient(180deg, #DDEEFC 0%, #FFFFFF 100%);
+}
+
+.esports-menu-desktop:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.esports-menu-desktop li {
+    position: relative;
+    float: left;
+    padding: 24px;
+    width: 33.33%;
+    height: 96px;
+    color: #59748A;
+}
+
+.esports-menu-desktop li+li {
+    border-left: 1px solid #e0e4e8;
+}
+
+.esports-menu-desktop li.tes {
+    background: url(../images/DesktopNav/TES.png) no-repeat right center /auto 100%;
+}
+
+.esports-menu-desktop li.wbts {
+    background: url(../images/DesktopNav/WBTS.png) no-repeat right center /auto 100%;
+}
+
+.esports-menu-desktop li.aster {
+    background: url(../images/DesktopNav/Aster.png) no-repeat right center /auto 100%;
+}
+
+.esports-menu-desktop li.active {
+    background-color: #fff;
+    color: #00acfa;
+}
+
+.esports-menu-desktop li.active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: #00ACFA;
+}
+
+.esports-menu-desktop i {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+    border-radius: 10px;
+    background-color: #dceefb;
+    box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1), inset 0 1px 1px #fff, inset 0 -1px 1px #c5e3f7;
+    vertical-align: middle;
+}
+
+.esports-menu-desktop i>img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.esports-menu-desktop span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.esports-menu-desktop span>span {
+    opacity: 0.5;
+}
+
+.esports-menu-desktop h3 {
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {}
+
 /*team*/
-.games-team {
+.team-stats {
+    position: relative;
+    /*height: 377px;*/
+    height: auto;
+    /*padding: 12px;*/
+    /*background: url(../images/team.png) no-repeat center bottom / 100% auto;*/
+    /*box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1);*/
+}
+
+.team-stats .team-bg {
+    position: static;
+    /*position: absolute;*/
+    bottom: 0;
+}
+
+.team-stats .team-bg img {
+    width: 100%;
+}
+
+/*.team-stats .team-bg {
     height: 174px;
-    background: #999;
+    background: url(../images/Team/TES-m.jpg) no-repeat center bottom / auto 100%;
+}*/
+
+.team-stats .stats-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px;
+    width: 100%;
+    font-size: 12px;
+    color: #fff;
+}
+
+.stats-info li {
+    display: inline-block;
+    width: 32%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.stats-info li:first-child,
+.stats-info li:last-child {
+    width: 16%;
+}
+
+.stats-info li:nth-child(3),
+.stats-info li:last-child {
+    text-align: right;
+}
+
+.stats-info li div {
+    display: inline-block;
+}
+
+.stats-info li div,
+.stats-info li h3 {
+    text-align: left;
+}
+
+.stats-info li i {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: #fff;
+    background-color: #dceefb;
+    box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1), inset 0 1px 1px #fff, inset 0 -1px 1px #c5e3f7;
+}
+
+.stats-info li i img {
+    display: block;
+    max-height: 100%;
+    min-width: 100%;
+}
+
+.stats-info span {
+    opacity: .7;
+}
+
+.stats-info h3 {
+    font-size: 20px;
+    color: #fff;
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    /*.team-stats .team-bg {
+        height: 377px;
+        background-image: url(../images/Team/TES-d.jpg);
+    }*/
+
+    .team-stats {
+        height: 377px;
+    }
+
+    .team-stats .team-bg {
+        position: absolute;
+    }
+
+    .stats-info li {
+        width: 36%;
+    }
+
+    .stats-info li:first-child,
+    .stats-info li:last-child {
+        width: 12%;
+    }
+
+    .stats-info li i {
+        width: 64px;
+        height: 64px;
+    }
+
+    .stats-info span {
+        font-size: 14px;
+    }
+
+    .stats-info h3 {
+        font-size: 24px;
+    }
 }
 
 /*games future*/
@@ -424,18 +816,84 @@ body {
     color: #fff;
 }
 
-.esports .games-future .games-list {
+.esports .games-future .overview {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1140px;
+}
+
+.esports .games-future .overview ul {
     margin-bottom: 12px;
-    height: 161px;
-    background: #999;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.overview li {
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.overview li:last-child {
+    margin-right: 12px;
+}
+
+.scoreboard {
+    width: 256px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1);
+}
+
+.scoreboard .time {
+    font-size: 12px;
+    color: #97A4B3;
+}
+
+.scoreboard .leagues {
+    color: #59748A;
+}
+
+.scoreboard .cscore .team-name {
+    width: 40%;
+}
+
+.scoreboard .more {
+    display: inline-block;
+    padding-top: 12px;
+    width: 100%;
+    border-top: 1px solid #e0e4e8;
+    font-size: 14px;
+    color: #1DB954;
+}
+
+.scoreboard .more i {
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    margin-left: 5px;
+    background: url(../images/arrow-green.svg) no-repeat right center;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .esports .games-future {
+        margin: 16px 0;
+    }
 }
 
 /*games record*/
-.esports .winning-record {
+.winning-record {
     padding: 12px;
     border-radius: 10px;
     background: #fff;
     box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1);
+}
+
+.winning-record+.winning-record {
+    margin-top: 12px;
 }
 
 .games-winning {
@@ -450,56 +908,25 @@ body {
     text-align: center;
 }
 
-.games-info .games-name {
-    color:#59748A;
+.games-winning.win {
+    background-color: #00ACFA;
+}
+
+.winning-record .leagues {
+    color: #59748A;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     overflow: hidden;
 }
-.games-info .games-time{
+
+.winning-record .time {
     color: #97A4B3;
     font-size: 12px;
 }
-.games-info-2{
-    font-size: 12px;
-    color: #97A4B3;
-    text-align: center;
-}
-.games-info-2 .game-score{
-    display: inline-block;
-    font-size: 20px;
-    color: #cad0d7;
-    vertical-align: middle;
-}
-.games-info-2 .team-name{
-    display: inline-block;
-    width: 35%;
-    vertical-align: middle;
-}
-.games-info-2 .team-name span{
-    display: block;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    overflow: hidden;
-}
-.games-info-2 i{
-    display: inline-block;
-    position: relative;
-    width: 30px;
-    height: 30px;
-}
-.games-info-2 i img{
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-height: 100%;
-    max-width: 100%;
-}
+
 .award-table {
+    display: none;
     width: 100%;
     border-radius: 10px;
     border: 1px solid #e7e7e7;
@@ -530,6 +957,32 @@ body {
 
 .award-table td+td {
     border-left: 1px solid #e7e7e7;
+}
+.winning-record.award-open .award-table{
+    display: inline-table;
+}
+.winning-record .more {
+    display: block;
+    margin-top: 16px;
+    padding: 12px;
+    border-top: 1px solid #e0e4e8;
+    font-size: 14px;
+    color: #97A4B3;
+    text-align: center;
+}
+
+.winning-record .more i {
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    margin-left: 5px;
+    background: url(../images/arrow-gray.svg) no-repeat right center;
+    background-size: cover;
+    transform: rotate(90deg);
+}
+
+.winning-record.award-open .more i {
+    transform: rotate(-90deg);
 }
 
 /*news*/
@@ -585,11 +1038,75 @@ body {
     font-size: 12px;
 }
 
+/*-- article feed --*/
+.article-filter{
+    margin-top: 12px;
+    margin-bottom: 4px;
+    text-align: center;
+}
+.article-filter li{
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 5px;
+    background:#fff;
+    font-size: 14px;
+    color: #97A4B3;
+}
+.article-filter li+li{
+    margin-left: 4px;
+}
+.article-filter li.active{
+    border:1px solid #25C296;
+    background-color:transparent;
+    color: #25C296;
+}
+.article-feed {
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1);
+    color: #97A4B3;
+}
+
+.article-feed+.article-feed {
+    margin-top: 12px;
+}
+
+.article-feed h3 {
+    font-size: 20px;
+    color: #59748A;
+}
+
+.article-feed h6 {
+    margin-top: 4px;
+    color: #97A4B3;
+}
+
+.article-feed img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 8px 0;
+    border-radius: 10px;
+}
+
+.article-feed .prophet h5 {
+    color: #59748A;
+}
+
+.article-feed .prophet .btn {
+    height: 36px;
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    line-height: 36px;
+}
+
 @media (max-width: 768px) {}
 
-/*-- block end --
+/*-- block end --*/
 
-/*-- fix --
+/*-- fix --*/
 .sticky-bottom-menu a {
     padding: 0 !important;
 }

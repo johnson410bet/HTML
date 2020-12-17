@@ -377,6 +377,17 @@ body {
     line-height: 24px;
 }
 
+.esports .section .section-title .more {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding-right: 12px;
+    font-size: 14px;
+    color: #97A4B3;
+    background: url(../images/arrow-gray.svg) no-repeat right center;
+    background-size: auto 50%;
+}
+
 @media (min-width: 768px) {
     .esports .section {
         padding: 16px 0;
@@ -393,32 +404,20 @@ body {
     }
 }
 
-.esports .section .section-title .more {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    padding-right: 12px;
-    font-size: 14px;
-    color: #97A4B3;
-    background: url(../images/arrow-gray.svg) no-repeat right center;
-    background-size: auto 50%;
-}
-
-
-.cscore {
+.esports .cscore {
     font-size: 12px;
     color: #97A4B3;
     text-align: center;
 }
 
-.cscore .game-score {
+.esports .cscore .game-score {
     display: inline-block;
     font-size: 20px;
     color: #cad0d7;
     vertical-align: middle;
 }
 
-.cscore .vs {
+.esports .cscore .vs {
     display: inline-block;
     width: 37px;
     height: 70px;
@@ -426,13 +425,13 @@ body {
     vertical-align: middle;
 }
 
-.cscore .team-name {
+.esports .cscore .team-name {
     display: inline-block;
     width: 35%;
     vertical-align: middle;
 }
 
-.cscore .team-name span {
+.esports .cscore .team-name span {
     display: block;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -440,14 +439,14 @@ body {
     overflow: hidden;
 }
 
-.cscore i {
+.esports .cscore i {
     display: inline-block;
     position: relative;
     width: 30px;
     height: 30px;
 }
 
-.cscore i img {
+.esports .cscore i img {
     display: block;
     position: absolute;
     top: 50%;
@@ -458,7 +457,7 @@ body {
 }
 
 /*header*/
-.esports-header {
+.esports .esports-header {
     position: relative;
     height: 46px;
     line-height: 46px;
@@ -469,20 +468,20 @@ body {
     color: #59748A;
 }
 
-.esports-header .header-back {
+.esports .esports-header .header-back {
     display: inline-block;
     position: absolute;
     left: 12px;
     height: 100%;
 }
 
-.esports-header .header-back span {
+.esports .esports-header .header-back span {
     display: none;
     color: #C4CDD5;
     vertical-align: middle;
 }
 
-.esports-header .header-back i {
+.esports .esports-header .header-back i {
     display: inline-block;
     width: 12px;
     height: 21px;
@@ -492,10 +491,12 @@ body {
     transform: rotate(180deg);
     vertical-align: middle;
 }
-.esports-header .team-select{
+
+.esports .esports-header .team-select {
     display: inline-block;
 }
-.esports-header .team-select i {
+
+.esports .esports-header .team-select i {
     display: inline-block;
     width: 6px;
     height: 10px;
@@ -505,11 +506,11 @@ body {
     transform: rotate(90deg);
 }
 
-.esports-header.open-select .team-select i {
+.esports .esports-header.open-select .team-select i {
     transform: rotate(-90deg);
 }
 
-.esports-header .team-select ul {
+.esports .esports-header .team-select ul {
     display: none;
     position: absolute;
     top: 54px;
@@ -524,20 +525,20 @@ body {
     box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1);
 }
 
-.esports-header.open-select .team-select ul {
+.esports .esports-header.open-select .team-select ul {
     display: block;
 }
 
-.esports-header .team-select ul li {
+.esports .esports-header .team-select ul li {
     line-height: 52px;
 }
 
-.esports-header .team-select ul li+li {
+.esports .esports-header .team-select ul li+li {
     border-top: 1px solid #E0E4E9;
 }
 
 @media (min-width: 768px) {
-    .esports-header {
+    .esports .esports-header {
         height: 58px;
         line-height: 58px;
         background-color: transparent;
@@ -545,42 +546,43 @@ body {
         box-shadow: none;
     }
 
-    .esports-header .header-back span {
+    .esports .esports-header .header-back span {
         display: inline-block;
         font-size: 18px;
     }
 
-    .esports-header .team-select ul {
+    .esports .esports-header .team-select ul {
         width: 200px;
         left: 50%;
         transform: translateX(-50%);
     }
 }
 
-/*menu*/
-.esports-menu {
+/*nav*/
+.esports .esports-nav {
     height: 46px;
     line-height: 46px;
     background: #fff;
-    color:#97A4B3;
+    color: #97A4B3;
     box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1);
 }
 
-.esports-menu li {
+.esports .esports-nav li {
     display: inline-block;
     float: left;
     width: 33.33%;
     font-size: 16px;
     text-align: center;
+    transition: .3s;
 }
 
-.esports-menu li span {
+.esports .esports-nav li span {
     display: inline-block;
     position: relative;
     padding: 0 4px;
 }
 
-.esports-menu li span:after {
+.esports .esports-nav li span:after {
     content: "";
     position: absolute;
     right: 50%;
@@ -588,59 +590,62 @@ body {
     left: 50%;
     height: 3px;
     background: #2dadf6;
+    transition: .3s;
 }
 
-.esports-menu li.active {
+.esports .esports-nav li.active {
     color: #2dadf6;
 }
 
-.esports-menu li.active span:after {
+.esports .esports-nav li.active span:after {
     right: 0%;
     left: 0%;
 }
 
-.esports-menu-desktop {
+.esports .esports-nav-desktop {
     margin-bottom: 32px;
     background: linear-gradient(180deg, #DDEEFC 0%, #FFFFFF 100%);
 }
 
-.esports-menu-desktop:after {
+.esports .esports-nav-desktop:after {
     content: "";
     display: block;
     clear: both;
 }
 
-.esports-menu-desktop li {
+.esports .esports-nav-desktop li {
     position: relative;
     float: left;
     padding: 24px;
     width: 33.33%;
     height: 96px;
     color: #59748A;
+    transition: .3s;
 }
 
-.esports-menu-desktop li+li {
+.esports .esports-nav-desktop li+li {
     border-left: 1px solid #e0e4e8;
 }
 
-.esports-menu-desktop li.tes {
+.esports .esports-nav-desktop li.tes {
     background: url(../images/DesktopNav/TES.png) no-repeat right center /auto 100%;
 }
 
-.esports-menu-desktop li.wbts {
+.esports .esports-nav-desktop li.wbts {
     background: url(../images/DesktopNav/WBTS.png) no-repeat right center /auto 100%;
 }
 
-.esports-menu-desktop li.aster {
+.esports .esports-nav-desktop li.aster {
     background: url(../images/DesktopNav/Aster.png) no-repeat right center /auto 100%;
 }
 
-.esports-menu-desktop li.active {
+.esports .esports-nav-desktop li:hover,
+.esports .esports-nav-desktop li.active {
     background-color: #fff;
     color: #00acfa;
 }
 
-.esports-menu-desktop li.active:after {
+.esports .esports-nav-desktop li.active:after {
     content: "";
     display: block;
     position: absolute;
@@ -651,7 +656,7 @@ body {
     background-color: #00ACFA;
 }
 
-.esports-menu-desktop i {
+.esports .esports-nav-desktop i {
     display: inline-block;
     width: 48px;
     height: 48px;
@@ -662,53 +667,43 @@ body {
     vertical-align: middle;
 }
 
-.esports-menu-desktop i>img {
+.esports .esports-nav-desktop i>img {
     display: block;
     max-height: 100%;
     max-width: 100%;
 }
 
-.esports-menu-desktop span {
+.esports .esports-nav-desktop span {
     display: inline-block;
     vertical-align: middle;
 }
 
-.esports-menu-desktop span>span {
+.esports .esports-nav-desktop span>span {
     opacity: 0.5;
 }
 
-.esports-menu-desktop h3 {
+.esports .esports-nav-desktop h3 {
     font-size: 20px;
 }
 
 @media (min-width: 768px) {}
 
 /*team*/
-.team-stats {
+.esports .team-stats {
     position: relative;
-    /*height: 377px;*/
     height: auto;
-    /*padding: 12px;*/
-    /*background: url(../images/team.png) no-repeat center bottom / 100% auto;*/
-    /*box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1);*/
 }
 
-.team-stats .team-bg {
+.esports .team-stats .team-bg {
     position: static;
-    /*position: absolute;*/
     bottom: 0;
 }
 
-.team-stats .team-bg img {
+.esports .team-stats .team-bg img {
     width: 100%;
 }
 
-/*.team-stats .team-bg {
-    height: 174px;
-    background: url(../images/Team/TES-m.jpg) no-repeat center bottom / auto 100%;
-}*/
-
-.team-stats .stats-info {
+.esports .team-stats .stats-info {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -718,33 +713,36 @@ body {
     color: #fff;
 }
 
-.stats-info li {
+.esports .team-stats .stats-info li {
     display: inline-block;
     width: 32%;
     text-align: left;
     vertical-align: middle;
 }
 
-.stats-info li:first-child,
-.stats-info li:last-child {
+.esports .team-stats .stats-info li:first-child,
+.esports .team-stats .stats-info li:last-child {
     width: 16%;
 }
 
-.stats-info li:nth-child(3),
-.stats-info li:last-child {
+.esports .team-stats .stats-info li:nth-child(3),
+.esports .team-stats .stats-info li:last-child {
     text-align: right;
 }
 
-.stats-info li div {
+.esports .team-stats .stats-info li div {
     display: inline-block;
-}
-
-.stats-info li div,
-.stats-info li h3 {
     text-align: left;
 }
 
-.stats-info li i {
+.esports .team-stats .stats-info li h3 {
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+    opacity: 1;
+}
+
+.esports .team-stats .stats-info li i {
     display: block;
     width: 48px;
     height: 48px;
@@ -754,55 +752,45 @@ body {
     box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1), inset 0 1px 1px #fff, inset 0 -1px 1px #c5e3f7;
 }
 
-.stats-info li i img {
+.esports .team-stats .stats-info li i img {
     display: block;
     max-height: 100%;
     min-width: 100%;
 }
 
-.stats-info span {
+.esports .team-stats .stats-info span {
     opacity: .7;
 }
 
-.stats-info h3 {
-    font-size: 20px;
-    color: #fff;
-    opacity: 1;
-}
 
 @media (min-width: 768px) {
-    /*.team-stats .team-bg {
-        height: 377px;
-        background-image: url(../images/Team/TES-d.jpg);
-    }*/
-
-    .team-stats {
+    .esports .team-stats {
         height: 377px;
     }
 
-    .team-stats .team-bg {
+    .esports .team-stats .team-bg {
         position: absolute;
     }
 
-    .stats-info li {
+    .esports .team-stats .stats-info li {
         width: 36%;
     }
 
-    .stats-info li:first-child,
-    .stats-info li:last-child {
+    .esports .team-stats .stats-info li:first-child,
+    .esports .team-stats .stats-info li:last-child {
         width: 12%;
     }
 
-    .stats-info li i {
+    .esports .team-stats .stats-info li i {
         width: 64px;
         height: 64px;
     }
 
-    .stats-info span {
+    .esports .team-stats .stats-info span {
         font-size: 14px;
     }
 
-    .stats-info h3 {
+    .esports .team-stats .stats-info h3 {
         font-size: 24px;
     }
 }
@@ -824,21 +812,22 @@ body {
 }
 
 .esports .games-future .overview ul {
+    margin-top: 12px;
     margin-bottom: 12px;
     white-space: nowrap;
     overflow: auto;
 }
 
-.overview li {
+.esports .games-future .overview li {
     display: inline-block;
     margin-left: 12px;
 }
 
-.overview li:last-child {
+.esports .games-future .overview li:last-child {
     margin-right: 12px;
 }
 
-.scoreboard {
+.esports .games-future .overview .scoreboard {
     width: 256px;
     padding: 12px;
     border-radius: 10px;
@@ -847,20 +836,20 @@ body {
     box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1);
 }
 
-.scoreboard .time {
+.esports .games-future .overview .scoreboard .time {
     font-size: 12px;
     color: #97A4B3;
 }
 
-.scoreboard .leagues {
+.esports .games-future .overview .scoreboard .leagues {
     color: #59748A;
 }
 
-.scoreboard .cscore .team-name {
+.esports .games-future .overview .scoreboard .cscore .team-name {
     width: 40%;
 }
 
-.scoreboard .more {
+.esports .games-future .overview .scoreboard .more {
     display: inline-block;
     padding-top: 12px;
     width: 100%;
@@ -869,7 +858,7 @@ body {
     color: #1DB954;
 }
 
-.scoreboard .more i {
+.esports .games-future .overview .scoreboard .more i {
     display: inline-block;
     width: 6px;
     height: 10px;
@@ -885,18 +874,18 @@ body {
 }
 
 /*games record*/
-.winning-record {
+.esports .winning-record {
     padding: 12px;
     border-radius: 10px;
     background: #fff;
     box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1);
 }
 
-.winning-record+.winning-record {
+.esports .winning-record+.winning-record {
     margin-top: 12px;
 }
 
-.games-winning {
+.esports .winning-record .games-winning {
     float: left;
     width: 30px;
     height: 30px;
@@ -908,11 +897,11 @@ body {
     text-align: center;
 }
 
-.games-winning.win {
+.esports .winning-record .games-winning.win {
     background-color: #00ACFA;
 }
 
-.winning-record .leagues {
+.esports .winning-record .leagues {
     color: #59748A;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -920,12 +909,12 @@ body {
     overflow: hidden;
 }
 
-.winning-record .time {
+.esports .winning-record .time {
     color: #97A4B3;
     font-size: 12px;
 }
 
-.award-table {
+.esports .winning-record .award-table {
     display: none;
     width: 100%;
     border-radius: 10px;
@@ -937,31 +926,33 @@ body {
     overflow: hidden;
 }
 
-.award-table tr:nth-child(even) {
+.esports .winning-record .award-table tr:nth-child(even) {
     background-color: #F2F5F8;
 }
 
-.award-table th {
+.esports .winning-record .award-table th {
     padding: 12px;
     background-color: #2dadf6;
     color: #fff;
 }
 
-.award-table th+th {
+.esports .winning-record .award-table th+th {
     border-left: 1px solid #59c5f8;
 }
 
-.award-table td {
+.esports .winning-record .award-table td {
     padding: 12px;
 }
 
-.award-table td+td {
+.esports .winning-record .award-table td+td {
     border-left: 1px solid #e7e7e7;
 }
-.winning-record.award-open .award-table{
+
+.esports .winning-record.award-open .award-table {
     display: inline-table;
 }
-.winning-record .more {
+
+.esports .winning-record .more {
     display: block;
     margin-top: 16px;
     padding: 12px;
@@ -969,9 +960,10 @@ body {
     font-size: 14px;
     color: #97A4B3;
     text-align: center;
+    cursor: pointer;
 }
 
-.winning-record .more i {
+.esports .winning-record .more i {
     display: inline-block;
     width: 6px;
     height: 10px;
@@ -981,12 +973,12 @@ body {
     transform: rotate(90deg);
 }
 
-.winning-record.award-open .more i {
+.esports .winning-record.award-open .more i {
     transform: rotate(-90deg);
 }
 
 /*news*/
-.esports .section .news-block {
+.esports .news-block {
     float: left;
     padding: 12px;
     width: 100%;
@@ -996,11 +988,11 @@ body {
     box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1);
 }
 
-.esports .section .news-block+.news-block {
+.esports .news-block+.news-block {
     margin-top: 8px;
 }
 
-.news-photo {
+.esports .news-block .news-photo {
     display: block;
     position: relative;
     float: left;
@@ -1012,17 +1004,16 @@ body {
     overflow: hidden;
 }
 
-.news-photo img {
+.esports .news-block .news-photo img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 100%;
-    width: auto;
     min-height: 65px;
+    max-width: 100%;
 }
 
-.news-subject {
+.esports .news-block .news-subject {
     line-height: 22px;
     font-size: 14px;
     font-weight: bold;
@@ -1032,35 +1023,50 @@ body {
     overflow: hidden;
 }
 
-.news-time {
+.esports .news-block .news-time {
     margin-top: 6px;
     color: #97A4B3;
     font-size: 12px;
 }
 
-/*-- article feed --*/
-.article-filter{
+/*-- article filter --*/
+.esports .article-filter {
     margin-top: 12px;
-    margin-bottom: 4px;
     text-align: center;
 }
-.article-filter li{
+.esports .article-filter:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.esports .article-filter li {
     display: inline-block;
-    padding: 6px 12px;
+    float:left;
+    padding: 6px 11px;
+    margin-bottom: 4px;
+    width:32%;
     border-radius: 5px;
-    background:#fff;
+    border: 1px solid #fff;
+    background: #fff;
     font-size: 14px;
     color: #97A4B3;
+    cursor: pointer;
 }
-.article-filter li+li{
-    margin-left: 4px;
+
+.esports .article-filter li+li {
+    margin-left: 2%;
 }
-.article-filter li.active{
-    border:1px solid #25C296;
-    background-color:transparent;
+
+.esports .article-filter li.active {
+    border: 1px solid #25C296;
+    background-color: transparent;
     color: #25C296;
 }
-.article-feed {
+
+/*-- article feed --*/
+
+.esports .article-feed {
     padding: 12px;
     border-radius: 10px;
     background-color: #fff;
@@ -1068,21 +1074,21 @@ body {
     color: #97A4B3;
 }
 
-.article-feed+.article-feed {
+.esports .article-feed+.article-feed {
     margin-top: 12px;
 }
 
-.article-feed h3 {
+.esports .article-feed h3 {
     font-size: 20px;
     color: #59748A;
 }
 
-.article-feed h6 {
+.esports .article-feed h6 {
     margin-top: 4px;
     color: #97A4B3;
 }
 
-.article-feed img {
+.esports .article-feed img {
     display: block;
     width: 100%;
     height: auto;
@@ -1090,11 +1096,19 @@ body {
     border-radius: 10px;
 }
 
-.article-feed .prophet h5 {
+.esports .article-feed .prophet {
+    display: none;
+}
+
+.esports .article-feed .prophet.show {
+    display: block;
+}
+
+.esports .article-feed .prophet h5 {
     color: #59748A;
 }
 
-.article-feed .prophet .btn {
+.esports .article-feed .prophet .btn {
     height: 36px;
     width: 100%;
     margin-top: 12px;
@@ -1117,16 +1131,6 @@ body {
 
 html.IsDesktop #content-main .content-width {
     max-width: 100%;
-}
-
-@media (max-width: 768px) {
-
-    .esports .spon-photo .photo-wrap .grid,
-    .esports .spon-photo .photo-wrap .grid.active-prev,
-    .esports .spon-photo .photo-wrap .grid.active-next,
-    .esports .spon-photo .photo-wrap .grid.active {
-        opacity: 1;
-    }
 }
 
 

@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>eSports</title>
     <script src="js/jquery.min.js"></script>
+    <script src="js/lobby-data.js"></script>
+    <script src="js/record-data.js"></script>
+    <script src="js/article-data.js"></script>
     <script src="js/js.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="esports">
-        <div class="esports-menu show-sm">
+    <div class="esports esports-lobby-page">
+        <!-- <div class="esports-nav show-sm">
             <ul>
                 <li class="active"><span>TES</span></li>
                 <li><span>WB.TS</span></li>
                 <li><span>Aster</span></li>
             </ul>
         </div>
-        <div class="esports-menu-desktop hide-sm">
+        <div class="esports-nav-desktop hide-sm">
             <div class="container">
                 <ul>
                     <li class="tes active">
@@ -45,7 +48,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
         <div class="section">
             <div class="container">
                 <div class="grid no-outside-gutters">
@@ -68,13 +71,13 @@
                                 <li>
                                     <div>
                                         <span>战绩</span>
-                                        <h3>86胜/43败</h3>
+                                        <h3 id="record">--</h3>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
                                         <span>胜率</span>
-                                        <h3>67%</h3>
+                                        <h3 id="percent">--</h3>
                                     </div>
                                 </li>
                             </ul>
@@ -107,28 +110,28 @@
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td>awe***awe</td>
-                                    <td>100,000元</td>
+                                    <td class="name" class="name">awe***awe</td>
+                                    <td class="award" class="award">100,000元</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>awe***awe</td>
-                                    <td>100,000元</td>
+                                    <td class="name">awe***awe</td>
+                                    <td class="award">100,000元</td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>awe***awe</td>
-                                    <td>100,000元</td>
+                                    <td class="name">awe***awe</td>
+                                    <td class="award">100,000元</td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>awe***awe</td>
-                                    <td>100,000元</td>
+                                    <td class="name">awe***awe</td>
+                                    <td class="award">100,000元</td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
-                                    <td>awe***awe</td>
-                                    <td>100,000元</td>
+                                    <td class="name">awe***awe</td>
+                                    <td class="award">100,000元</td>
                                 </tr>
                             </table>
                         </div>
@@ -137,59 +140,8 @@
             </div>
         </div>
         <div class="section games-future">
-            <div class="container">
-                <div class="section-title">未来比赛</div>
-            </div>
             <div class="overview">
                 <ul>
-                    <li>
-                        <div class="scoreboard">
-                            <div class="time">10/25 18:00</div>
-                            <div class="leagues">S10世界总决赛-淘汰赛</div>
-                            <div class="cscore">
-                                <div class="team-name"><i><img src="images/tes.png" alt=""></i><span>TES</span></div>
-                                <div class="vs"></div>
-                                <div class="team-name"><i><img src="images/fnc.png" alt=""></i><span>FNC</span></div>
-                            </div>
-                            <a class="more" href="">立即投注<i></i></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="scoreboard">
-                            <div class="time">10/25 18:00</div>
-                            <div class="leagues">S10世界总决赛-淘汰赛</div>
-                            <div class="cscore">
-                                <div class="team-name"><i><img src="images/tes.png" alt=""></i><span>TES</span></div>
-                                <div class="vs"></div>
-                                <div class="team-name"><i><img src="images/fnc.png" alt=""></i><span>FNC</span></div>
-                            </div>
-                            <a class="more" href="">立即投注<i></i></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="scoreboard">
-                            <div class="time">10/25 18:00</div>
-                            <div class="leagues">S10世界总决赛-淘汰赛</div>
-                            <div class="cscore">
-                                <div class="team-name"><i><img src="images/tes.png" alt=""></i><span>TES</span></div>
-                                <div class="vs"></div>
-                                <div class="team-name"><i><img src="images/fnc.png" alt=""></i><span>FNC</span></div>
-                            </div>
-                            <a class="more" href="">立即投注<i></i></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="scoreboard">
-                            <div class="time">10/25 18:00</div>
-                            <div class="leagues">S10世界总决赛-淘汰赛</div>
-                            <div class="cscore">
-                                <div class="team-name"><i><img src="images/tes.png" alt=""></i><span>TES</span></div>
-                                <div class="vs"></div>
-                                <div class="team-name"><i><img src="images/fnc.png" alt=""></i><span>FNC</span></div>
-                            </div>
-                            <a class="more" href="">立即投注<i></i></a>
-                        </div>
-                    </li>
                     <li>
                         <div class="scoreboard">
                             <div class="time">10/25 18:00</div>
@@ -233,34 +185,34 @@
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td>awe***awe</td>
-                            <td>100,000元</td>
+                            <td class="name">awe***awe</td>
+                            <td class="award">100,000元</td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>awe***awe</td>
-                            <td>100,000元</td>
+                            <td class="name">awe***awe</td>
+                            <td class="award">100,000元</td>
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td>awe***awe</td>
-                            <td>100,000元</td>
+                            <td class="name">awe***awe</td>
+                            <td class="award">100,000元</td>
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td>awe***awe</td>
-                            <td>100,000元</td>
+                            <td class="name">awe***awe</td>
+                            <td class="award">100,000元</td>
                         </tr>
                         <tr>
                             <td>5</td>
-                            <td>awe***awe</td>
-                            <td>100,000元</td>
+                            <td class="name">awe***awe</td>
+                            <td class="award">100,000元</td>
                         </tr>
                     </table>
                 </div>
             </div>
         </div>
-        <div class="section">
+        <div class="section" id="news">
             <div class="container">
                 <div class="section-title">最新消息<a class="more" href="article.html">显示更多</a></div>
                 <div class="grid sm-no-gutters no-outside-gutters">

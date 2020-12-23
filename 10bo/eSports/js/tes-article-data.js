@@ -54,9 +54,9 @@ $(function() {
     /*---- lobby page ----*/
     if ($(".esports-lobby-page")[0]) {
         for (i = 0; i < 4; i++) {
-            $(".esports-lobby-page #news .news-block").eq(i).find(".news-photo img").attr("src", articleArray[i][3]);
-            $(".esports-lobby-page #news .news-block").eq(i).find(".news-info .news-subject").text(articleArray[i][1]);
-            $(".esports-lobby-page #news .news-block").eq(i).find(".news-info .news-time").text(articleArray[i][2]);
+            $(".esports-lobby-page #tes .news .news-block").eq(i).find(".news-photo img").attr("src", articleArray[i][3]);
+            $(".esports-lobby-page #tes .news .news-block").eq(i).find(".news-info .news-subject").text(articleArray[i][1]);
+            $(".esports-lobby-page #tes .news .news-block").eq(i).find(".news-info .news-time").text(articleArray[i][2]);
         }
     }
 

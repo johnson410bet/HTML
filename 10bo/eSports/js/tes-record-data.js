@@ -89,24 +89,24 @@ $(function() {
     /*---- lobby page ----*/
     if ($(".esports-lobby-page")[0]) {
         for (i = 0; i < 2; i++) {
-            $(".esports-lobby-page .winning-record").eq(i).find(".games-winning").text(recordArray[0][0]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".games-info .leagues").text(recordArray[0][1]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".games-info .time").text(recordArray[0][2]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".cscore .team-name:first img").attr("src", recordArray[0][3]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".cscore .team-name:first span").text(recordArray[0][4]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".cscore .game-score").text(recordArray[0][5]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".cscore .team-name:last img").attr("src", recordArray[0][6]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".cscore .team-name:last span").text(recordArray[0][7]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".award-table .name").eq(0).text(recordArray[0][8]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".award-table .award").eq(0).text(recordArray[0][9]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".award-table .name").eq(1).text(recordArray[0][10]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".award-table .award").eq(1).text(recordArray[0][11]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".award-table .name").eq(2).text(recordArray[0][12]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".award-table .award").eq(2).text(recordArray[0][13]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".award-table .name").eq(3).text(recordArray[0][14]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".award-table .award").eq(3).text(recordArray[0][15]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".award-table .name").eq(4).text(recordArray[0][16]);
-            $(".esports-lobby-page .winning-record").eq(i).find(".award-table .award").eq(4).text(recordArray[0][17]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".games-winning").text(recordArray[0][0]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".games-info .leagues").text(recordArray[0][1]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".games-info .time").text(recordArray[0][2]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".cscore .team-name:first img").attr("src", recordArray[0][3]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".cscore .team-name:first span").text(recordArray[0][4]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".cscore .game-score").text(recordArray[0][5]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".cscore .team-name:last img").attr("src", recordArray[0][6]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".cscore .team-name:last span").text(recordArray[0][7]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".award-table .name").eq(0).text(recordArray[0][8]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".award-table .award").eq(0).text(recordArray[0][9]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".award-table .name").eq(1).text(recordArray[0][10]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".award-table .award").eq(1).text(recordArray[0][11]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".award-table .name").eq(2).text(recordArray[0][12]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".award-table .award").eq(2).text(recordArray[0][13]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".award-table .name").eq(3).text(recordArray[0][14]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".award-table .award").eq(3).text(recordArray[0][15]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".award-table .name").eq(4).text(recordArray[0][16]);
+            $(".esports-lobby-page #tes .winning-record").eq(i).find(".award-table .award").eq(4).text(recordArray[0][17]);
         }
     }
 

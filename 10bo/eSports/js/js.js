@@ -1,11 +1,22 @@
 $(function() {
     /*---- nav ----*/
-    // index
+    // mobile index
     $(".esports-nav li").click(function() {
         $(this).addClass("active").siblings().removeClass("active");
+        var navIndex = $(".esports-nav li.active").index();
+        // desktop nav open
+        $(".esports-nav-desktop li").eq(navIndex).addClass("active").siblings().removeClass("active");
+        // team tag open
+        $(".team-tag>li").eq(navIndex).addClass("active").siblings().removeClass("active");
     })
+    // desktop index
     $(".esports-nav-desktop li").click(function() {
         $(this).addClass("active").siblings().removeClass("active");
+        var navIndex = $(".esports-nav-desktop li.active").index();
+        // desktop nav open
+        $(".esports-nav li").eq(navIndex).addClass("active").siblings().removeClass("active");
+        // team tag open
+        $(".team-tag>li").eq(navIndex).addClass("active").siblings().removeClass("active");
     })
 
     // record page and article page
@@ -52,7 +63,7 @@ $(function() {
             })
         }
     })
-    
+
 
 
 

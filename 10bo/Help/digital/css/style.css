@@ -1,0 +1,1353 @@
+@import url("reset.min.css");
+
+/*-- basic --*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    background: #F2F5F8;
+    color: #666;
+
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 2em;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+button {
+    font-size: 100%;
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    background: inherit;
+}
+
+.clear {
+    display: block;
+    clear: both;
+}
+
+.btn {
+    display: inline-block;
+    position: relative;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+    transition: .3s;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #61ce8a;
+}
+
+.btn:active {
+    color: #fff;
+    background: #199d47;
+}
+
+.btn+.btn {
+    margin-left: 5px;
+}
+
+.btn-primary {
+    height: 44px;
+    line-height: 44px;
+    background: #1DB955;
+    border-radius: 29px;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.btn-secondary {
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #1DB954;
+    border-radius: 22px;
+    font-size: 15px;
+    color: #1DB954;
+}
+
+.color-primary {
+    color: #004f93;
+}
+
+.color-secondary {
+    color: #Fdd900;
+}
+
+.color-click {
+    color: #1DB955;
+}
+
+.show {
+    display: block !important;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.show-sm {
+    display: none;
+}
+
+.hide-sm {
+    display: block;
+}
+
+@media (max-width: 767px) {
+
+    .h1-sm {
+        font-size: 32px;
+    }
+
+    .h2-sm {
+        font-size: 28px;
+    }
+
+    .h3-sm {
+        font-size: 24px;
+    }
+
+    .h4-sm {
+        font-size: 20px;
+    }
+
+    .h5-sm {
+        font-size: 16px;
+    }
+
+    .h6-sm {
+        font-size: 12px;
+    }
+
+    .container {
+        max-width: 720px;
+        min-width: 320px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        height: 38px;
+        line-height: 38px;
+        font-size: 14px;
+    }
+
+    .show-sm {
+        display: block;
+    }
+
+    .hide-sm {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/*-- grid system --*/
+.no-gutters {
+    margin: 0;
+}
+
+.no-gutters>.col,
+.no-gutters>[class*="col-"] {
+    padding: 0;
+    min-height: 1px;
+}
+
+.grid {
+    margin: 0 -15px;
+}
+
+.grid:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+[class*="col-"] {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 15px;
+}
+
+.col-1 {
+    max-width: 8.333333%;
+}
+
+.col-2 {
+    max-width: 16.666667%;
+}
+
+.col-3 {
+    max-width: 25%;
+}
+
+.col-4 {
+    max-width: 33.333333%;
+}
+
+.col-5 {
+    max-width: 41.666667%;
+}
+
+.col-6 {
+    max-width: 50%;
+}
+
+.col-7 {
+    max-width: 58.333333%;
+}
+
+.col-8 {
+    max-width: 66.666667%;
+}
+
+.col-9 {
+    max-width: 75%;
+}
+
+.col-10 {
+    max-width: 83.333333%;
+}
+
+.col-11 {
+    max-width: 91.666667%;
+}
+
+.col-12 {
+    max-width: 100%;
+}
+
+
+@media (max-width: 767px) {
+    .col-sm-1 {
+        max-width: 8.333333%;
+    }
+
+    .col-sm-2 {
+        max-width: 16.666667%;
+    }
+
+    .col-sm-3 {
+        max-width: 25%;
+    }
+
+    .col-sm-4 {
+        max-width: 33.333333%;
+    }
+
+    .col-sm-5 {
+        max-width: 41.666667%;
+    }
+
+    .col-sm-6 {
+        max-width: 50%;
+    }
+
+    .col-sm-7 {
+        max-width: 58.333333%;
+    }
+
+    .col-sm-8 {
+        max-width: 66.666667%;
+    }
+
+    .col-sm-9 {
+        max-width: 75%;
+    }
+
+    .col-sm-10 {
+        max-width: 83.333333%;
+    }
+
+    .col-sm-11 {
+        max-width: 91.666667%;
+    }
+
+    .col-sm-12 {
+        max-width: 100%;
+    }
+}
+
+/*-- header --*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 84px;
+    line-height: 84px;
+    background: #15315d;
+    text-align: center;
+    z-index: 20;
+}
+
+.header .logo {
+    float: left;
+    display: inline-block;
+    padding: 19px 0;
+    height: 84px;
+}
+
+.header .logo img {
+    height: 100%;
+}
+
+.header .menu {
+    display: inline-block;
+}
+
+.header .menu ul li {
+    display: inline-block;
+    position: relative;
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header .menu ul li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #1DB954;
+    transition: .3s;
+}
+
+.header .menu ul li.active:after {
+    right: 0;
+    left: 0;
+}
+
+.header .menu ul li a {
+    display: block;
+    color: #fff;
+    transition: .3s;
+}
+
+.header .menu ul li.active a {
+    color: #1DB954;
+}
+
+.header .user {
+    float: right;
+}
+
+.header .user a.btn {
+    width: auto;
+    padding: 0 20px
+}
+
+@media (max-width: 767px) {
+    .header {
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .header .logo {
+        padding: 0;
+        height: 60px;
+        line-height: 80px;
+        vertical-align: top;
+    }
+
+    .header .logo img {
+        height: 32px;
+    }
+
+    .header .menu {
+        display: none;
+    }
+}
+
+/*-- header end --*/
+
+/*-- kv --*/
+
+.kv {
+    position: relative;
+    height: 500px;
+    background: url(https://content.100b108.com/resp/help/usdt/10coins-fdb-1920x500.jpg) no-repeat center center / auto 100%;
+    overflow: hidden;
+}
+
+.kv:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+
+.kv .kv-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.kv .kv-info h1 {
+    color: #FDD900;
+}
+
+@media (max-width: 767px) {
+    .kv {
+        height: 35vw;
+        background-image: url(https://content.100b108.com/resp/help/usdt/10coins-fdb-800x280.jpg);
+    }
+
+    .kv .kv-info {
+        left: 30px;
+        right: 30px;
+        transform: translate(0%, -50%);
+        white-space: inherit;
+    }
+
+    .kv .kv-info h1 {
+        font-size: 16px;
+    }
+}
+
+/*-- kv end --*/
+/*-- nav --*/
+.nav {
+    padding-top: 20px;
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+    position: relative;
+    padding: 12px;
+    transition: .3s;
+}
+
+.nav li:hover,
+.nav li.active {
+    color: #1DB954;
+}
+
+.nav li:after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    left: 50%;
+    height: 3px;
+    background-color: #1DB954;
+    transition: .3s;
+}
+
+.nav li:hover:after,
+.nav li.active:after {
+    right: 0;
+    left: 0;
+}
+
+/*-- nav end --*/
+/*-- section --*/
+.section {
+    padding: 70px 0;
+}
+
+
+@media (max-width: 768px) {
+
+    .section {
+        padding: 20px 0;
+    }
+
+
+    .section .item-wrap .item .img {
+        padding: 14px;
+        width: 64px;
+        height: 64px;
+    }
+
+    .section .item-wrap .item h4 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .section .item-wrap .item p {
+        font-size: 12px;
+    }
+
+}
+
+/*-- section end --*/
+
+/*-- footer --*/
+.footer {
+    padding: 20px 0;
+    text-align: center;
+    background: #494D52;
+}
+
+.footer a {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+}
+
+.footer a+a {
+    margin-top: 25px;
+}
+
+.logo-blackburn {
+    height: 43px;
+    background-image: url(../images/logo-blackburn.svg);
+}
+
+.logo-DDI {
+    height: 64px;
+    background-image: url(../images/logo-DDI.svg);
+}
+
+.logo-juventus {
+    height: 77px;
+    background-image: url(../images/logo-juventus.svg);
+}
+
+/*-- footer end --*/
+
+/*-- popup --*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .75);
+    text-align: center;
+    z-index: 30;
+}
+
+.popup .popup-content {
+    display: inline-block;
+    position: absolute;
+    top: 90px;
+    right: 90px;
+    bottom: 40px;
+    left: 90px;
+    padding: 20px;
+    border-radius: 5px;
+    background: #F2F5F8;
+    text-align: left;
+    overflow-x: hidden;
+    ;
+}
+
+.popup .btn-close-popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    line-height: 50px;
+    font-size: 22px;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .popup {
+        background: #F2F5F8;
+    }
+
+    .popup .btn-close-popup {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        color: #1DB954;
+        border-color: #1DB954;
+        z-index: 1;
+    }
+
+    .popup .popup-content {
+        top: 50px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 0;
+    }
+
+}
+
+/*-- popup end --*/
+
+.btn-goTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/go-top.svg) no-repeat center center;
+}
+
+
+
+/*-- 200604 updata 10coin --*/
+.grid-box {
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .coin-wrap h1 {
+        font-size: 24px;
+    }
+
+    .coin-wrap h5 {
+        font-size: 12px;
+    }
+
+    .coin-wrap .grid-box {
+        margin-top: 0px;
+    }
+}
+
+.coin-intro {
+    position: relative;
+    padding-top: 40px;
+}
+
+.coin-intro .btn {
+    margin-top: 20px;
+    padding: 0 40px;
+    height: 58px;
+    width: auto;
+    min-width: 180px;
+    line-height: 58px;
+}
+
+.coin-intro .intro-text {
+    padding: 0 20px;
+}
+
+.wizard {
+    position: relative;
+    margin-top: -30px;
+    margin-bottom: -90px;
+}
+
+.wizard .lead {
+    width: 102%;
+    animation: fadeIn 2s;
+}
+
+.wizard [class*="ele"] {
+    display: inline-block;
+    position: absolute;
+    width: auto;
+}
+
+.wizard .ele1,
+.wizard .ele11 {
+    top: 56%;
+    left: 10%;
+    width: 12.8%;
+    opacity: 0;
+    animation: eleUpDown 5s infinite;
+    animation-delay: 1.5s;
+}
+
+.wizard .ele11 {
+    animation: fadeOut-leftBottom 1s;
+    animation-delay: .5s;
+}
+
+.wizard .ele2,
+.wizard .ele21 {
+    top: 32%;
+    left: 0%;
+    width: 12.3%;
+    opacity: 0;
+    animation: eleDownUp 4s infinite;
+    animation-delay: 1.5s;
+}
+
+.wizard .ele21 {
+    animation: fadeOut-left 1s;
+    animation-delay: .5s;
+}
+
+.wizard .ele3,
+.wizard .ele31 {
+    top: 10%;
+    left: 12%;
+    width: 8.4%;
+    opacity: 0;
+    animation: eleUpDown 6s infinite;
+    animation-delay: 1.5s;
+}
+
+.wizard .ele31 {
+    animation: fadeOut-leftTop 1s;
+    animation-delay: .5s;
+}
+
+.wizard .ele4,
+.wizard .ele41 {
+    top: 0%;
+    left: 42%;
+    width: 6.5%;
+    opacity: 0;
+    animation: eleDownUp 10s infinite;
+    animation-delay: 1.5s;
+    ;
+}
+
+.wizard .ele41 {
+    animation: fadeOut-top 1s;
+    animation-delay: .5s;
+}
+
+.wizard .ele5,
+.wizard .ele51 {
+    left: 75%;
+    top: 1%;
+    width: 23.5%;
+    opacity: 0;
+    animation: eleUpDown 10s infinite;
+    animation-delay: 1.5s;
+    ;
+}
+
+.wizard .ele51 {
+    animation: fadeOut-rightTop 1s;
+    animation-delay: .5s;
+}
+
+.wizard .ele6,
+.wizard .ele61 {
+    top: 35%;
+    left: 75%;
+    width: 7%;
+    opacity: 0;
+    animation: eleDownUp 10s infinite;
+    animation-delay: 1.5s;
+    ;
+}
+
+.wizard .ele61 {
+    animation: fadeOut-right 1s;
+    animation-delay: .5s;
+}
+
+.wizard .ele7,
+.wizard .ele71 {
+    top: 51%;
+    left: 82%;
+    width: 15.2%;
+    opacity: 0;
+    animation: eleUpDown 4s infinite;
+    animation-delay: 1.5s;
+}
+
+.wizard .ele71 {
+    animation: fadeOut-rightBottom 1s;
+    animation-delay: .5s;
+}
+
+@keyframes eleUpDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(-15%);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateY(15%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes eleDownUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(15%);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-15%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut-top {
+    0% {
+        transform: translate(0, 100%) scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut-rightTop {
+    0% {
+        transform: translate(-100%, 100%) scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut-right {
+    0% {
+        transform: translate(-100%, 0%) scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut-rightBottom {
+    0% {
+        transform: translate(-100%, -100%) scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut-bottom {
+    0% {
+        transform: translate(0%, -100%) scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut-leftBottom {
+    0% {
+        transform: translate(100%, -100%) scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut-left {
+    0% {
+        transform: translate(100%, 0%) scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut-leftTop {
+    0% {
+        transform: translate(100%, 100%) scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .coin-intro {
+        text-align: center;
+        padding-bottom: 88%;
+    }
+
+    .coin-intro .btn {
+        width: 100%;
+        height: 44px;
+        line-height: 44px;
+        font-size: 12px;
+    }
+
+    .coin-intro .grid>div {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .coin-intro .grid>div:first-child {
+        position: static;
+    }
+
+    .wizard {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        width: 88%;
+    }
+}
+
+.coin-pros {
+    position: relative;
+    padding-bottom: 120px;
+    margin-bottom: -65px;
+    background: url(../images/advantage-bg.jpg) #062359 no-repeat;
+    background-position: center center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.coin-pros:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 66px;
+    background: #F2F5F8;
+}
+
+.coin-pros h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.pros-item {
+    position: relative;
+    padding: 30px 20px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 5px;
+    background: rgba(0, 30, 62, .7);
+    /*box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.50);*/
+}
+
+
+.pros-item i {
+    float: left;
+    width: 78px;
+    height: 78px;
+}
+
+.pros-item i img {
+    width: 100%;
+}
+
+.pros-item .pros-text {
+    width: auto;
+    margin-left: 88px;
+}
+
+.pros-item .pros-text h3 {
+    color: #FF5B45;
+}
+
+.coin-pros .char2 {
+    position: absolute;
+    width: 69.6%;
+    right: -200px;
+    bottom: -138px;
+}
+
+@media (max-width: 768px) {
+    .coin-pros {
+        padding-bottom: 20px;
+        margin: 0;
+        background-size: auto 90%;
+        background-position: center bottom -120%;
+        overflow: visible;
+    }
+
+    .coin-pros:before {
+        display: none;
+    }
+
+    .coin-pros .grid>div {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .pros-item {
+        padding: 15px;
+    }
+
+    .pros-item i {
+        width: 58px;
+        height: 58px;
+    }
+
+    .pros-item .pros-text {
+        margin-left: 68px;
+    }
+
+    .coin-pros .grid>div:last-child .pros-item .pros-text {
+        padding-right: 30%;
+    }
+
+    .pros-item .pros-text h3 {
+        font-size: 18px;
+    }
+
+    .pros-item .pros-text p {
+        font-size: 12px;
+    }
+
+    .coin-pros .char2 {
+        right: -15px;
+        bottom: -80px;
+        width: 39.4%;
+    }
+}
+
+.coin-promo {
+    text-align: center;
+}
+
+.coin-promo .promo-item {
+    padding: 0 15px;
+    border-radius: 5px;
+    background: #fff;
+    text-align: left;
+    line-height: 24px;
+}
+
+.coin-promo .promo-item .promo-item-img {
+    margin: 0 -15px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.coin-promo .promo-item img {
+    display: block;
+    width: 100%;
+}
+
+.coin-promo .promo-item .promo-btn-wrap {
+    padding: 20px 0;
+    margin-top: 15px;
+    border-top: 1px solid #E7E7E7;
+    text-align: center;
+}
+
+.coin-promo .promo-item .tt {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.coin-promo .promo-item .td {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #999;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.coin-promo .btn {
+    height: 44px;
+    width: 45%;
+    padding: 0;
+    line-height: 44px;
+}
+
+.coin-promo .btn-secondary {
+    height: 42px;
+    line-height: 42px;
+}
+
+.coin-promo .btn+.btn {
+    margin-left: 2%;
+}
+
+@media (max-width: 768px) {
+    .coin-promo {
+        text-align: center;
+    }
+
+    .coin-promo .promo-item .tt {
+        font-size: 16px;
+    }
+
+    .coin-promo .promo-item .td {
+        height: auto;
+        font-size: 12px;
+    }
+}
+
+.coin-event {
+    position: relative;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.coin-event img {
+    width: 100%;
+}
+
+.coin-event .char3 {
+    display: inline-block;
+    position: absolute;
+    left: -46%;
+    width: 68%;
+    top: -10%;
+}
+
+.coin-event .char4 {
+    display: inline-block;
+    position: absolute;
+    right: -67%;
+    width: 94%;
+    bottom: -3%;
+}
+
+.coin-event .char5 {
+    position: absolute;
+    top: -115px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 115px;
+    background: center top;
+    background-size: cover;
+    animation: char5 2.3s infinite;
+}
+
+@keyframes char5 {
+    0% {
+        background-image: url(../images/characters/characters5-1.jpg);
+    }
+
+    43% {
+        background-image: url(../images/characters/characters5-1.jpg);
+    }
+
+    46.3% {
+        background-image: url(../images/characters/characters5-2.jpg);
+    }
+
+    47.3% {
+        background-image: url(../images/characters/characters5-2.jpg);
+    }
+
+    51.6% {
+        background-image: url(../images/characters/characters5-3.jpg);
+    }
+
+    55.9% {
+        background-image: url(../images/characters/characters5-2.jpg);
+    }
+
+    56.9% {
+        background-image: url(../images/characters/characters5-1.jpg);
+    }
+
+    100% {
+        background-image: url(../images/characters/characters5-1.jpg);
+    }
+}
+
+@media (max-width: 768px) {
+    .coin-event {
+        margin-top: 100px;
+        overflow: visible;
+    }
+
+    .coin-event .char3,
+    .coin-event .char4 {
+        display: none;
+    }
+}
+
+.coin-tnc {
+    text-align: center;
+}
+
+.coin-tnc .tnc-text {
+    display: none;
+    margin-top: 20px;
+    padding: 0 40px;
+    text-align: left;
+    opacity: .8;
+}
+
+.coin-tnc .tnc-switch {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .coin-tnc .tnc-text {
+        padding: 0 10px;
+    }
+}
+
+/*-- 10coin end --*/
+
+/*-- 201224 update usdt --*/
+.usdt .coin-pros {
+    background-image: url(https://content.100b108.com/resp/help/usdt/advantage-bg.jpg);
+}
+
+.usdt .grid-box {
+    text-align: left;
+}
+
+.usdt .grid-box p {
+    color: #97A4B3;
+}
+
+.usdt ol {
+    list-style: disc;
+    color: #97A4B3;
+}
+
+.all-digital>ul>li {
+    display: none;
+}
+
+.all-digital>ul>li.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .usdt .coin-pros {
+        background: url(https://content.100b108.com/resp/help/usdt/m-advantage-bg.jpg) no-repeat center bottom / cover;
+    }
+
+    .usdt .coin-pros .grid>div:last-child .pros-item .pros-text {
+        padding-right: 0;
+    }
+
+    .usdt .coin-event {
+        margin-top: 0;
+    }
+
+}
+
+/*-- usdt end --*/
+
+
+
+
+/*-- css end --*/

@@ -90,7 +90,7 @@ $(function() {
     // set overview data
     var tesOverviewLength = tesOverviewArray.length;
     for (i = 1; i < tesOverviewLength; i++) {
-        $(".esports-lobby-page .overview ul").append($(".esports-lobby-page .overview ul li:first").clone());
+        $(".esports-lobby-page #tes .overview ul").append($(".esports-lobby-page .overview ul li:first").clone());
     }
     for (i = 0; i < tesOverviewLength; i++) {
         $(".esports-lobby-page #tes .overview ul li").eq(i).find(".time").text(tesOverviewArray[i][0]);
@@ -101,8 +101,9 @@ $(function() {
         $(".esports-lobby-page #tes .overview ul li").eq(i).find(".team-name:last span").text(tesOverviewArray[i][5]);
     }
     var wbtsOverviewLength = wbtsOverviewArray.length;
+    console.log(wbtsOverviewLength);
     for (i = 1; i < wbtsOverviewLength; i++) {
-        $(".esports-lobby-page .overview ul").append($(".esports-lobby-page .overview ul li:first").clone());
+        $(".esports-lobby-page #wbts .overview ul").append($(".esports-lobby-page .overview ul li:first").clone());
     }
     for (i = 0; i < wbtsOverviewLength; i++) {
         $(".esports-lobby-page #wbts .overview ul li").eq(i).find(".time").text(wbtsOverviewArray[i][0]);
@@ -114,7 +115,7 @@ $(function() {
     }
     var asterOverviewLength = asterOverviewArray.length;
     for (i = 1; i < asterOverviewLength; i++) {
-        $(".esports-lobby-page .overview ul").append($(".esports-lobby-page .overview ul li:first").clone());
+        $(".esports-lobby-page #aster .overview ul").append($(".esports-lobby-page .overview ul li:first").clone());
     }
     for (i = 0; i < asterOverviewLength; i++) {
         $(".esports-lobby-page #aster .overview ul li").eq(i).find(".time").text(asterOverviewArray[i][0]);

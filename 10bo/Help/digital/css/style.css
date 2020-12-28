@@ -425,7 +425,7 @@ button {
 .kv {
     position: relative;
     height: 500px;
-    background: url(https://content.100b108.com/resp/help/usdt/10coins-fdb-1920x500.jpg) no-repeat center center / auto 100%;
+    background: url(../images/10coins-fdb-1920x500.jpg) no-repeat center center / cover;
     overflow: hidden;
 }
 
@@ -457,7 +457,7 @@ button {
 @media (max-width: 767px) {
     .kv {
         height: 35vw;
-        background-image: url(https://content.100b108.com/resp/help/usdt/10coins-fdb-800x280.jpg);
+        background-image: url(../images/10coins-fdb-800x280.jpg);
     }
 
     .kv .kv-info {
@@ -1306,7 +1306,7 @@ button {
 
 /*-- 201224 update usdt --*/
 .usdt .coin-pros {
-    background-image: url(https://content.100b108.com/resp/help/usdt/advantage-bg.jpg);
+    background-image: url(../images/usdt/advantage-bg.jpg);
 }
 
 .usdt .grid-box {
@@ -1332,7 +1332,7 @@ button {
 
 @media (max-width: 768px) {
     .usdt .coin-pros {
-        background: url(https://content.100b108.com/resp/help/usdt/m-advantage-bg.jpg) no-repeat center bottom / cover;
+        background: url(../images/usdt/m-advantage-bg.jpg) no-repeat center bottom / cover;
     }
 
     .usdt .coin-pros .grid>div:last-child .pros-item .pros-text {

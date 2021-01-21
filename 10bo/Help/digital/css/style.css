@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+ul {
+    padding: 0;
+}
+
 /*-- basic --*/
 
 .coin-wrap * {
@@ -1422,5 +1426,31 @@ button {
 }
 
 /*-- digital guide end --*/
+
+/*-- ppwallet --*/
+.kv .btn {
+    width: auto;
+    height: 58px;
+    min-width: 180px;
+    line-height: 58px;
+}
+.intro-video{
+    text-align: center;
+}
+.intro-video h4{
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .kv {
+        height: 72vw;
+    }
+
+    .kv .btn {
+        height: 44px;
+        line-height: 44px;
+    }
+}
+
+/*-- ppwallet end --*/
 
 /*-- css end --*/

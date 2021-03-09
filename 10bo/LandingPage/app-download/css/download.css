@@ -1,0 +1,201 @@
+.download {
+  width: 100%;
+  height: auto;
+  display: none;
+  overflow: hidden;
+  font-family: "微软雅黑";
+}
+
+.instruction-button img {
+  display: block;
+  border: none;
+  width: 1.9rem;
+  height: 0.6rem;
+  float: right;
+  margin: 0.2rem;
+}
+
+.remind {
+  width: 100%;
+  min-height: 173vw;
+  overflow: hidden;
+  position: relative;
+  background: url("../assets/sport_bg.jpg") top center no-repeat;
+  background-size: 7.5rem 13.34rem;
+}
+
+.remind-zanzhu {
+  background: url("../assets/text.png") top center no-repeat;
+  width: 100%;
+  height: 1.4rem;
+  background-size: auto 1.4rem;
+  overflow: hidden;
+  margin: 10px 0 7px 0;
+}
+
+a.logo_mobile {
+  display: block;
+  width: 1.53rem;
+  height: 1.53rem;
+  margin: 0 auto;
+}
+
+a.logo_mobile img {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+a.dllg {
+  display: block;
+  width: 2.16rem;
+  height: 0.6rem;
+  margin: 0 auto;
+  margin-top: 0.69rem;
+}
+
+a.dllg img {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.load {
+  width: 100%;
+}
+
+.load-img {
+  display: block;
+  border: none;
+  width: 4.27rem;
+  height: 1.21rem;
+  margin: 0 auto;
+}
+
+.hcenter-img {
+  display: block;
+  border: none;
+  width: 4.27rem;
+  height: 1.21rem;
+  margin: 0 auto;
+}
+
+.remind h3 {
+  font-size: 0.48rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0.6rem;
+  margin-top: 0.4em;
+}
+
+.tuto {
+  width: 100%;
+  font-size: 0.28rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 56vw;
+  line-height: 2.5em;
+}
+
+.down_tip, .ios_reinstall {
+  width: 100%;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0.10rem;
+  line-height: 1.5em;
+}
+
+.ios_reinstall {
+  margin-top: 45px;
+}
+
+#consult {
+  display: block;
+  width: 0.29rem;
+  height: 0.58rem;
+  margin: 0 auto;
+}
+
+.weixin_tip {
+  display: none;
+  width: 100%;
+  height: 100vh;
+}
+
+#tips {
+  display: block;
+  border: none;
+  width: 100%;
+  height: auto;
+}
+
+.torial {
+  width: 100%;
+  height: 172vw;
+  background: linear-gradient(#33b9ff, #33a7ff);
+}
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-wrapper {
+  width: 100% !important;
+  height: auto;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide img {
+  display: block;
+  border: none;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.swiper-pagination-bullet {
+  width: 0.2rem !important;
+  height: 0.2rem !important;
+  display: inline-block;
+  border-radius: 100%;
+  background: #fff !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #1DB955 !important;
+}
+
+#cnzz_stat_icon_1276123516 {
+  display: none;
+}
+
+.dlText {
+  margin: auto;
+}
+
+.download_android, .download_ios {
+  display: block;
+  margin: 0 auto;
+  margin-top: 16px;
+  border: none;
+  padding: 0;
+  -moz-border-radius: 50px;
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  -webkit-border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.35rem;
+  text-decoration: none;
+  min-width: 351px;
+  min-height: 58px;
+}

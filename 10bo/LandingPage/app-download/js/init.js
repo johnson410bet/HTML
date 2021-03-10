@@ -124,8 +124,8 @@ function createQRCode(address) {
     }
 
     $('#qrcode').qrcode({
-        width: 200,
-        height: 200,
+        width: 146,
+        height: 146,
         text: text
     });
 

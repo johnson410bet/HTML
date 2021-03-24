@@ -655,7 +655,6 @@ i {
     }
 
     .top-logo {
-        background-image: url(../images/logo.png);
         position: absolute;
         top: 0;
         left: 50%;

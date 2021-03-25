@@ -12,7 +12,7 @@ $(document).ready(function () {
         fullUrl = 'https://www.108b108.com';
         changeCtaLinks();
     } else if (window.location.href.indexOf('https://www.10bet10000.com') > -1) {
-        fullUrl = 'https://www.10bo16.com';
+        fullUrl = 'https://wl10bet1000.adsrv.eacdn.com/C.ashx?btag=a_2005965b_2951c_&affid=2002799&siteid=2005965&adid=2951&c=';
         changeCtaLinks();
     }
 

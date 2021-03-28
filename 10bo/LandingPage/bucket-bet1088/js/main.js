@@ -6,13 +6,13 @@ $(document).ready(function () {
     }
 
     if (window.location.href.indexOf('https://www.10bet1818.com') > -1) {
-        fullUrl = 'https://www.100b108.com';
+        fullUrl = 'https://wl10bet1000.adsrv.eacdn.com/C.ashx?btag=a_2003215b_2960c_&affid=2002867&siteid=2003215&adid=2960&c=';
         changeCtaLinks();
     } else if (window.location.href.indexOf('https://www.10bet1881.com') > -1) {
-        fullUrl = 'https://www.108b108.com';
+        fullUrl = 'https://wl10bet1000.adsrv.eacdn.com/C.ashx?btag=a_2003215b_2960c_&affid=2002867&siteid=2003215&adid=2960&c=';
         changeCtaLinks();
     } else if (window.location.href.indexOf('https://www.10bet10000.com') > -1) {
-        fullUrl = 'https://wl10bet1000.adsrv.eacdn.com/C.ashx?btag=a_2005965b_2951c_&affid=2002799&siteid=2005965&adid=2951&c=';
+        fullUrl = 'https://wl10bet1000.adsrv.eacdn.com/C.ashx?btag=a_2003215b_2960c_&affid=2002867&siteid=2003215&adid=2960&c=';
         changeCtaLinks();
     }
 

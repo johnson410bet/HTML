@@ -1,0 +1,432 @@
+body {
+    margin: 0;
+}
+
+.kv {
+    position: relative;
+    height: 25.8vw;
+    background: #fff url(../images/home-SBet-1920x500.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+@media (max-width: 1200px) {
+    .kv {
+        height: 310px;
+    }
+}
+@media (max-width: 768px) {
+    .kv {
+        height: 35vw;
+        background-image: url(../images/home-SBet-800x280.jpg);
+    }
+}
+
+/*-- basic --*/
+.sbetintro * {
+    box-sizing: border-box;
+}
+
+.sbetintro {
+    margin: 0;
+    padding: 0;
+    background: #F2F5F8;
+    font-family: Arial, Helvetica, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", sans-serif;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.sbetintro ul,
+.sbetintro li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sbetintro ol li {
+    list-style-type: decimal;
+}
+
+.sbetintro a {
+    text-decoration: none;
+}
+
+.sbetintro h1,
+.sbetintro h2,
+.sbetintro h3,
+.sbetintro h4,
+.sbetintro h5,
+.sbetintro h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.sbetintro h1 {
+    font-size: 32px;
+}
+
+.sbetintro h2 {
+    font-size: 28px;
+}
+
+.sbetintro h3 {
+    font-size: 24px;
+}
+
+.sbetintro h4 {
+    font-size: 18px;
+}
+
+.sbetintro h5 {
+    font-size: 16px;
+}
+
+.sbetintro h6 {
+    font-size: 12px;
+}
+
+.sbetintro p a,
+.sbetintro h4 a {
+    text-decoration: underline;
+}
+
+.sbetintro .btn {
+    display: inline-block;
+    position: relative;
+    padding: 0 40px;
+    text-align: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.sbetintro .btn:hover {
+    color: #fff;
+    background: #61ce8a;
+}
+
+.sbetintro .btn:active {
+    color: #fff;
+    background: #199d47;
+}
+
+.sbetintro .btn-primary {
+    height: 58px;
+    line-height: 58px;
+    background: #1DB955;
+    border-radius: 29px;
+    border: none;
+    font-size: 16px;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+
+.sbetintro .btn-secondary {
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #1DB954;
+    border-radius: 22px;
+    font-size: 15px;
+    color: #1DB954;
+    background: transparent;
+}
+
+.sbetintro .color-green {
+    color: #1DB954;
+}
+
+.sbetintro .cololr-yellow {
+    color: #FDD900;
+}
+
+.sbetintro .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sbetintro .hide,
+.sbetintro .show-sm {
+    display: none;
+}
+
+.sbetintro .show,
+.sbetintro .hide-sm {
+    display: block;
+}
+
+.sbetintro .clear {
+    display: block;
+    clear: both;
+}
+
+.sbetintro .middle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+    .sbetintro .container {
+        max-width: 720px;
+        min-width: 320px;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .sbetintro .h1-sm {
+        font-size: 28px;
+    }
+
+    .sbetintro .h2-sm {
+        font-size: 24px;
+    }
+
+    .sbetintro .h3-sm {
+        font-size: 18px;
+    }
+
+    .sbetintro .h4-sm {
+        font-size: 16px;
+    }
+
+    .sbetintro .h5-sm {
+        font-size: 12px;
+    }
+
+    .sbetintro .h6-sm {
+        font-size: 10px;
+    }
+
+    .sbetintro .show-sm {
+        display: block;
+    }
+
+    .sbetintro .hide-sm {
+        display: none;
+    }
+
+    .sbetintro .footer p {
+        width: 100%;
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .sbetintro .btn-primary {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sbetintro .container {
+        max-width: 1140px;
+    }
+}
+/*-- basic end --*/
+
+/*-- grid system --*/
+.sbetintro .no-outside-gutters {
+    margin: -11px -15px;
+}
+
+.sbetintro .grid {
+    /*margin: -11px -15px;*/
+}
+
+.sbetintro .grid:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.sbetintro .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.sbetintro .no-gutters>.col,
+.sbetintro .no-gutters>[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.sbetintro [class*="col-"] {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 11px 15px;
+    box-sizing: border-box;
+}
+
+.sbetintro .col-1 {
+    max-width: 8.333333%;
+}
+
+.sbetintro .col-2 {
+    max-width: 16.666667%;
+}
+
+.sbetintro .col-3 {
+    max-width: 25%;
+}
+
+.sbetintro .col-4 {
+    max-width: 33.333333%;
+}
+
+.sbetintro .col-5 {
+    max-width: 41.666667%;
+}
+
+.sbetintro .col-6 {
+    max-width: 50%;
+}
+
+.sbetintro .col-7 {
+    max-width: 58.333333%;
+}
+
+.sbetintro .col-8 {
+    max-width: 66.666667%;
+}
+
+.sbetintro .col-9 {
+    max-width: 75%;
+}
+
+.sbetintro .col-10 {
+    max-width: 83.333333%;
+}
+
+.sbetintro .col-11 {
+    max-width: 91.666667%;
+}
+
+.sbetintro .col-12 {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .sbetintro .no-outside-gutters {
+        margin: -5px;
+    }
+
+    .sbetintro .sm-no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .sbetintro .sm-no-gutters>.col,
+    .sbetintro .sm-no-gutters>[class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .sbetintro [class*="col-"] {
+        padding: 5px;
+    }
+
+    .sbetintro .col-sm-1 {
+        max-width: 8.333333%;
+    }
+
+    .sbetintro .col-sm-2 {
+        max-width: 16.666667%;
+    }
+
+    .sbetintro .col-sm-3 {
+        max-width: 25%;
+    }
+
+    .sbetintro .col-sm-4 {
+        max-width: 33.333333%;
+    }
+
+    .sbetintro .col-sm-5 {
+        max-width: 41.666667%;
+    }
+
+    .sbetintro .col-sm-6 {
+        max-width: 50%;
+    }
+
+    .sbetintro .col-sm-7 {
+        max-width: 58.333333%;
+    }
+
+    .sbetintro .col-sm-8 {
+        max-width: 66.666667%;
+    }
+
+    .sbetintro .col-sm-9 {
+        max-width: 75%;
+    }
+
+    .sbetintro .col-sm-10 {
+        max-width: 83.333333%;
+    }
+
+    .sbetintro .col-sm-11 {
+        max-width: 91.666667%;
+    }
+
+    .sbetintro .col-sm-12 {
+        max-width: 100%;
+    }
+}
+/*-- grid system end --*/
+
+/*-- block --*/
+.sbetintro .section {
+    padding: 12px 0;
+}
+
+@media (min-width: 768px) {
+    .sbetintro .section {
+        padding: 24px 0;
+    }
+    .sbetintro-contant-page .container {
+        position: relative;
+        max-width: 730px;
+    }
+}
+
+/*-- article feed --*/
+.sbetintro .article-feed {
+    padding: 24px;
+    border-radius: 10px;
+    line-height: 22px;
+    background-color: #fff;
+    box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1);
+    color:#59748A;
+}
+.sbetintro p {
+    margin-top: 12px;
+}
+.sbetintro p:not(:last-child) {
+   margin-bottom: 24px;
+}
+.sbetintro p:last-child {
+    margin-bottom: 0px;
+ }
+.sbetintro .article-feed h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0066B7;
+}
+/*-- block end --*/
+
+/*-- fix --*/
+.sticky-bottom-menu a {
+    padding: 0 !important;
+}
+
+.footer-menu-holder {
+    clear: none !important;
+}
+
+html.IsDesktop #content-main .content-width {
+    max-width: 100%;
+}
+
+/*-- css end --*/

@@ -23,22 +23,21 @@
         </div>
     </div>
     <div class="section">
-        <div>
-            <div class="col-6 col-sm-12">
-                <div class="img">
-                    <picture>
-                        <source media="(max-width: 767px)" srcset="images/bg-mobile.jpg">
-                        <img src="images/bg-desktop.jpg" alt="SBet实博">
-                    </picture>   
-                </div>    
-            </div>
-            <div class="col-6 col-sm-12 right-side">
-                <div class="content">
-                    <h2>暂时性系统维护</h2>
-                    <p>各位亲爱的会员：</p>
-                    <p>为了网路安全与更好的服务品质，我们将进行暂时性系统维护，维护期间可能会有服务器中断等连线问题，如有不便之处，敬请见谅！</p>
-                    <!-- <a href="https://www.10bo16.com/" class="btn btn-primary" target="_blank">返回首页</a> -->
-                </div>
+        <div class="col-6 col-sm-12 left-side">
+            <div class="img">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/bg-mobile.jpg">
+                    <img src="images/bg-desktop.jpg" alt="SBet实博">
+                </picture>   
+            </div>    
+        </div>
+        <div class="col-6 col-sm-12 right-side">
+            <div class="content">
+                <h2>暂时性系统维护</h2>
+                <p>各位亲爱的会员：</p>
+                <p>为了网路安全与更好的服务品质，我们将进行暂时性系统维护，维护期间可能会有服务器中断等连线问题，如有不便之处，敬请见谅！</p>
+                <div class="">
+                <a id="openChat" onclick="openChat()" class="btn btn-primary" target="_blank">线上谘询</a></div>
             </div>
         </div>
     </div>
@@ -48,6 +47,33 @@
             <p>当前赛事时间、比分、数据等，仅提供参考。实博会尽力确保网站内所有赛事信息，然而不承担任何因网站和其内容导致的损失（包括但不限于运作或传讯中的限制、延迟或阻碍、数据遗失、盘口故障以及因任何人不当使用网站及其内容数据所导致之错误和遗漏）。</p>
         </div>
     </div>
-</body>
+    <!-- BoldChat Visitor Monitor HTML v5.00 (Website=10Bet China,ChatButton=OT_SBet(China)_PROD,ChatInvitation=OT_SBet(China)_PROD) -->
+    <script type="text/javascript">
+        window._bcvma = window._bcvma || [];
+        _bcvma.push(["setAccountID", "452238140998883100"]);
+        _bcvma.push(["setParameter", "WebsiteID", "3896362138517497387"]);
+        _bcvma.push(["setParameter", "InvitationID", "2921414024498314296"]);
+        _bcvma.push(["addFloat", {type: "chat", id: "187121154846277306"}]);
+        _bcvma.push(["pageViewed"]);
+        var bcLoad = function(){
+        if(window.bcLoaded) return; window.bcLoaded = true;
+        var vms = document.createElement("script"); vms.type = "text/javascript"; vms.async = true;
+        vms.src = "https://vmss.boldchat.com/aid/452238140998883100/bc.vms4/vms.js";
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vms, s);
+        };
+        if(window.pageViewer && pageViewer.load) pageViewer.load();
+        else if(document.readyState=="complete") bcLoad();
+        else if(window.addEventListener) window.addEventListener('load', bcLoad, false);
+        else window.attachEvent('onload', bcLoad);
 
+        function openChat() {
+            if(document.getElementById('bc-frame') != null){ //最小化
+                document.querySelector(".bc-minimize-state-idle").click();   
+            }else{          
+                document.querySelector(".bcFloat a").click();  
+            }
+        }
+    </script>
+    <!-- /BoldChat Visitor Monitor HTML v5.00 -->
+</body>
 </html>

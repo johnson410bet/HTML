@@ -59,20 +59,16 @@ h6 {
 }
 
 .btn {
+    width: 100%;
+    cursor: pointer;
     display: inline-block;
-    position: relative;
-    height: 52px;
+    height: 3.5rem;
     border-radius: 3rem;
-    line-height: 52px;
-    font-size: 1em;
+    line-height: 3.5rem;
+    font-size: 1.2em;
     text-align: center;
     transition: .3s;
     padding: 0 48px;
-}
-@media (max-width: 767px) {
-    .btn {
-        width: 100%;
-    } 
 }
 
 .btn:hover {
@@ -97,6 +93,7 @@ h6 {
 
 .container {
     width: 100%;
+    height: 100%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -199,10 +196,6 @@ h6 {
 }
 
 @media (max-width: 767px) {
-    [class*="col-"] {
-        /* padding: 5px; */
-    }
-
     .col-sm-1 {
         max-width: 8.333333%;
     }
@@ -356,4 +349,38 @@ h6 {
     }
 }
 /*-- footer end --*/
+
+/*-- fix height--*/
+@media (max-width: 1199px) and (min-width: 768px) {
+    .section {
+        position: fixed;
+        display: flex;
+        height: 100vh;
+    }
+    .section .left-side {
+        background-color: #01a1f7;
+        background: linear-gradient(90deg, #0090e7, #01a1f7, #00aaff);
+    }   
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+/*-- chat --*/
+.bcFloat,
+.bcFloat>div,
+.bc-minimize-state {
+    width: 4.5em !important;
+    height: 4.5em !important;
+}
+
+.bcFloat,
+.bc-minimize-state {
+    position: fixed !important;
+    top: auto !important;
+    right: 1rem !important;
+    bottom: 2rem !important;
+    left: auto !important;
+}
+/*-- chat end --*/
 /*-- css end --*/

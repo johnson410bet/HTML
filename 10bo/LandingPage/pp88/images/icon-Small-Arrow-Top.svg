@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>D6DAEDE8-26C5-4C54-8348-BA9536BD3526</title>
+    <defs>
+        <path d="M4.57279221,3.6 L9.3363961,-0.936765616 C9.68786797,-1.27150072 9.68786797,-1.81421356 9.3363961,-2.14894867 C8.98492424,-2.48368378 8.41507576,-2.48368378 8.0636039,-2.14894867 L2.6636039,2.99390847 C2.31213203,3.32864358 2.31213203,3.87135642 2.6636039,4.20609153 L8.0636039,9.34894867 C8.41507576,9.68368378 8.98492424,9.68368378 9.3363961,9.34894867 C9.68786797,9.01421356 9.68786797,8.47150072 9.3363961,8.13676562 L4.57279221,3.6 Z" id="path-1"></path>
+    </defs>
+    <g id="Live-Casino" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing---LiveCasino---m" transform="translate(-276.000000, -750.000000)">
+            <g id="Content" transform="translate(12.000000, 490.000000)">
+                <g id="2" transform="translate(12.000000, 231.000000)">
+                    <g id="Icons-/-16-/-Arrows-/-Down" transform="translate(252.000000, 29.000000)">
+                        <g id="graphic" transform="translate(1.883333, 4.116667)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Arrow" fill-rule="nonzero" transform="translate(6.000000, 3.600000) scale(-1, 1) rotate(90.000000) translate(-6.000000, -3.600000) "></g>
+                            <g id="Group" mask="url(#mask-2)">
+                                <g transform="translate(-1.883333, -4.116667)" id="color/97A4B3">
+                                    <rect id="Rectangle" fill="#25C296" x="0" y="0" width="16" height="16"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

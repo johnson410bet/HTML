@@ -1,0 +1,598 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.ld-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 100px;
+    background: #03539a;
+    /*letter-spacing: 2px;*/
+    font-family: Helvetica, Arial, "SF Pro", "Roboto", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+    font-size: 14px;
+    color: #59748A;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.ld-wrap * {
+    line-height: normal;
+    box-sizing: border-box;
+}
+
+.ld-wrap p {
+    margin: 0;
+}
+
+.ld-wrap a {
+    text-decoration: none;
+}
+
+.ld-wrap .btn {
+    display: inline-block;
+    position: relative;
+    padding: 0 24px;
+    height: 44px;
+    width: 160px;
+    border-radius: 22px;
+    line-height: 44px;
+    font-size: 16px;
+    text-align: center;
+    background: #25C296;
+    color: #FFFFFF;
+    transition: .3s;
+    text-shadow: none;
+}
+
+.ld-wrap .btn:hover {
+    color: #fff;
+    background: #1D9976;
+}
+
+.ld-wrap .btn:active {
+    color: #fff;
+    background: #199d47;
+}
+
+.ld-wrap .text-highlight {
+    color: #F6D517;
+    background: -webkit-linear-gradient(top, #FEE973 0, #F6D517 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ld-wrap table {
+    margin: 5px 0;
+    width: 100%;
+    /*border-collapse: collapse;*/
+    border-spacing: 0;
+    border-radius: 10px;
+    border: 1px solid #EFF5FC;
+    text-align: center;
+    overflow: hidden;
+}
+
+.ld-wrap table tr:nth-child(even) {
+    background: #EFF5FC;
+}
+
+.ld-wrap table tr th {
+    padding: 15px;
+    background: #0066B7;
+    color: #fff;
+}
+
+.ld-wrap table tr th+th {
+    border-left: 1px solid rgba(255, 255, 255, .2);
+}
+
+.ld-wrap table tr td {
+    padding: 15px;
+}
+
+.ld-wrap table tr td+td {
+    border-left: 1px solid rgba(89, 116, 138, .1);
+}
+
+.ld-wrap .container {
+    padding: 0 12px;
+}
+
+@media (min-width: 768px) {
+    .ld-wrap {
+        position: relative;
+        font-size: 16px;
+    }
+
+    .ld-wrap .container {
+        margin: auto;
+        padding: 0 24px;
+        max-width: 1000px;
+    }
+
+    .ld-wrap table {
+        margin: 10px 0;
+    }
+
+    .ld-wrap table * {
+        font-size: 16px;
+    }
+}
+
+.ld-wrap .kv {
+    position: relative;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.ld-wrap .kv .kv-img {
+    margin: 0 -12px;
+}
+
+.ld-wrap .kv img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.ld-wrap .kv .kv-content {
+    display: inline-block;
+    margin-top: -10%;
+    text-align: left;
+}
+
+.ld-wrap .kv .kv-content i.logo {
+    display: inline-block;
+    position: absolute;
+    top: 24px;
+    left: 12px;
+    width: 110px;
+}
+
+.ld-wrap .kv .kv-content .title {
+    font-size: 42px;
+    color: #fff;
+    font-weight: bold;
+    background: -webkit-linear-gradient(top, #F9FBFE 0, #CAE5FD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ld-wrap .kv .kv-content p {
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.ld-wrap .kv .kv-content .promo-button {
+    margin-top: 12px;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .ld-wrap .kv {
+        margin-bottom: -260px;
+        height: 860px;
+        background: url(images/Landing_casino_bg_desktope_1920x860.jpg) no-repeat center top / 1920px 860px;
+        text-align: left;
+    }
+
+    .ld-wrap .kv .container:before {
+        display: inline-block;
+        content: "";
+        height: 600px;
+        vertical-align: middle;
+    }
+
+    .ld-wrap .kv .kv-img {
+        display: none
+    }
+
+    .ld-wrap .kv .kv-content {
+        margin-top: 0;
+        vertical-align: middle;
+    }
+
+    .ld-wrap .kv .kv-content .title {
+        font-size: 56px;
+    }
+
+    .ld-wrap .kv .kv-content p {
+        font-size: 40px;
+    }
+
+    .ld-wrap .kv .kv-content i.logo {
+        position: static;
+        width: 205px;
+    }
+
+    .ld-wrap .kv .kv-content .promo-button {
+        margin-top: 20px;
+    }
+}
+
+.ld-wrap .promo-content {
+    position: relative;
+    padding: 24px 12px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 5px 0 rgba(0, 69, 138, 0.1);
+    overflow: hidden;
+}
+
+.ld-wrap .promo-content .h3 {
+    font-size: 20px;
+}
+
+.ld-wrap .promo-content .h5 {
+    display: block;
+    margin-bottom: 5px;
+    color: #59748A;
+    font-size: 14px;
+    opacity: .7;
+}
+
+.ld-wrap .promo-content [class*="col-"] {
+    margin: 24px 0;
+}
+
+.ld-wrap .promo-content a {
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ld-wrap .promo-content a img {
+    display: block;
+    width: 100%;
+}
+
+.ld-wrap .promo-content a span {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #FFF;
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .ld-wrap .promo-content {
+        padding: 24px;
+    }
+
+    .ld-wrap .promo-content .h3 {
+        margin-bottom: 5px;
+        font-size: 32px;
+    }
+
+    .ld-wrap .promo-content .h5 {
+        font-size: 20px;
+    }
+
+    .ld-wrap .promo-content [class*="col-"] {
+        float: left;
+        width: 33%;
+        padding: 0 15px;
+        margin: 0;
+    }
+
+}
+
+.stages {
+    padding: 0;
+}
+
+.stages li {
+    position: relative;
+    padding-left: 17px;
+    padding-bottom: 20px;
+    list-style: none;
+}
+
+.stages li+li {
+    margin-top: 12px;
+}
+
+.stages li:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background: #59748A;
+    opacity: .7;
+}
+
+.stages li:after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    bottom: 0;
+    left: 5px;
+    width: 2px;
+    border-radius: 1px;
+    background: #59748A;
+    opacity: .7;
+}
+
+.stages .stages-start {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.stages .stages-start span {
+    display: block;
+    margin-bottom: 5px;
+    color: #59748A;
+    font-size: 14px;
+    opacity: .7;
+}
+
+.stages .stages-heading {
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #25C296;
+    cursor: pointer;
+}
+
+.stages .stages-heading:after {
+    display: inline-block;
+    content: "";
+    position: relative;
+    top: 3px;
+    margin-left: 2px;
+    width: 16px;
+    height: 16px;
+    background: url(images/icon-Small-Arrow-Top.svg) no-repeat center center / cover;
+    transform: rotate(270deg);
+}
+
+.stages li.active .stages-heading:after {
+    transform: rotate(90deg);
+}
+
+.stages .stages-heading span {
+    display: block;
+    margin-bottom: 5px;
+    color: #59748A;
+    font-size: 14px;
+    opacity: .7;
+}
+
+.stages .stages-content {
+    display: none;
+    margin-top: 12px;
+}
+
+.stages li.active .stages-content {
+    display: block;
+}
+
+.stages .stages-content .stages-label,
+.stages .stages-content .stages-jackpot {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.stages .stages-content .stages-label span,
+.stages .stages-content .stages-jackpot span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #59748A;
+    opacity: .7;
+}
+
+.stages .stages-content .stages-jackpot {
+    color: #FF5B45;
+}
+
+.stages .stages-content .stages-minbet {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.stages .stages-games {
+    margin-bottom: 12px;
+}
+
+.stages .stages-games-link {
+    margin: 0 -5px;
+    overflow: hidden;
+}
+
+.stages .stages-games p {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.stages .stages-games a {
+    display: inline-block;
+    float: left;
+    width: 33%;
+    padding: 0 5px;
+}
+
+.stages .stages-games a img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.stages .stages-rule>span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .stages li {
+        padding-left: 40px;
+    }
+
+    .stages .stages-start {
+        font-size: 24px;
+    }
+
+    .stages .stages-start span {
+        font-size: 20px;
+    }
+
+    .stages li:before {
+        top: 3px;
+        width: 16px;
+        height: 16px;
+        border-radius: 8px;
+    }
+
+    .stages li:after {
+        top: 22px;
+        left: 8px;
+    }
+
+    .stages .stages-heading {
+        font-size: 24px;
+    }
+
+    .stages .stages-heading:after {
+        width: 24px;
+        height: 24px;
+    }
+
+    .stages .stages-heading span {
+        font-size: 20px;
+    }
+
+    .stages .stages-content .stages-label,
+    .stages .stages-content .stages-jackpot {
+        font-size: 20px
+    }
+
+    .stages .stages-content .stages-label span,
+    .stages .stages-content .stages-jackpot span {
+        font-size: 16px
+    }
+
+    .stages .stages-games p {
+        font-size: 16px;
+    }
+
+    .stages .stages-games-link {
+        margin: 0 -12px;
+
+    }
+
+    .stages .stages-games a {
+
+        padding: 0 12px;
+    }
+}
+
+.ld-wrap .rule {
+    line-height: 22px;
+
+}
+
+.ld-wrap .rule .rule-heading {
+    font-size: 24px;
+}
+
+.ld-wrap .rule ol {
+    padding-left: 20px;
+}
+
+.ld-wrap .rule ol li+li,
+.ld-wrap .rule .sup {
+    margin-top: 5px;
+}
+
+.ld-wrap .rule .sup p {
+    margin-left: -20px;
+}
+
+@media (min-width: 768px) {}
+
+.ld-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .75);
+    text-align: center;
+    z-index: 30;
+}
+
+.ld-popup.active {
+    display: block;
+}
+
+.ld-popup .popup-content {
+    display: inline-block;
+    position: absolute;
+    top: 90px;
+    right: 90px;
+    bottom: 40px;
+    left: 90px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    text-align: left;
+    overflow-x: hidden;
+    ;
+}
+
+.ld-popup .btn-close-popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    line-height: 50px;
+    font-size: 22px;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .ld-popup {
+        background: #fff;
+    }
+
+    .ld-popup .btn-close-popup {
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        color: #1DB954;
+        border-color: #1DB954;
+        z-index: 1;
+    }
+
+    .ld-popup .popup-content {
+        top: 100px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-bottom: 100px;
+        border-radius: 0;
+    }
+
+}
+
+
+
+/*css end*/

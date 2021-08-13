@@ -68,7 +68,7 @@ body {
 .ld-wrap table {
     margin: 5px 0;
     width: 100%;
-    /*border-collapse: collapse;*/
+    border-collapse: separate;
     border-spacing: 0;
     border-radius: 10px;
     border: 1px solid #EFF5FC;
@@ -572,7 +572,7 @@ body {
 
     .ld-popup .btn-close-popup {
         position: absolute;
-        top: 60px;
+        top: 20px;
         right: 10px;
         width: 32px;
         height: 32px;
@@ -583,7 +583,7 @@ body {
     }
 
     .ld-popup .popup-content {
-        top: 100px;
+        top: 60px;
         right: 0;
         bottom: 0;
         left: 0;

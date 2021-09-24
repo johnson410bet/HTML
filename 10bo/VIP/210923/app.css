@@ -1,0 +1,265 @@
+/*-- basic --*/
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Helvetica, Arial, "SF Pro", "Roboto", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color:#59748A;
+    background: #EFF5FC;
+    margin: 0;
+    padding: 0;
+}
+.app br.thick {
+    content: '';
+    display: block;
+    height: 0.6em;
+}
+.app ol, .app ul {
+    list-style-position: outside;
+    padding-left: 1.8em;
+}
+.app ol {
+    list-style-type: decimal;
+}
+.app ul {
+    list-style-type: disc;
+}
+.app a {
+    cursor: pointer;
+    color: #25C296;
+    text-decoration: none;
+}
+.app a:hover {
+    color: #1D9976;
+}
+.app h1 {
+    font-size: 36px;
+}
+.app h2 {
+    font-size: 32px;
+}
+.app h3 {
+    font-size: 24px;
+}
+.app h4 {
+    font-size: 20px;
+}
+.app h5 {
+    font-size: 16px;
+}
+.app h6 {
+    font-size: 12px;
+}
+.app h1, .app h2, .app h3, .app h4, .app h5, .app h6 {
+    font-weight: normal;
+    margin: 0.75em 0;
+}
+.app .clear {
+    display: block;
+    clear: both;
+}
+.app .show {
+    display: block;
+}
+.app .hide {
+    display: none;
+}
+.app .color-secondary {
+    color: #25C296;
+}
+.app .btn {
+    display: inline-block;
+    position: relative;
+    height: 3em;
+    border-radius: 3rem;
+    line-height: 3em;
+    font-size: 1.1em;
+    text-align: center;
+    transition: .3s;
+    padding: 0 48px;
+}
+@media (max-width: 768px) {
+    .app .btn {
+        width: 100%;
+    } 
+}
+.app .btn:hover {
+    color: #fff;
+    background: #1D9976;
+}
+.app .btn:active {
+    color: #fff;
+    background: #199d47;
+}
+.app .btn-primary {
+    background: #25C296;
+    color: #FFFFFF;
+}
+.app .btn-secondary {
+    border: 1px solid #25C296;
+    color: #25C296;
+}
+.app .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.app .container:not(:last-child){
+    margin-bottom: 8px;
+}
+@media (max-width: 768px) {
+    .app .container {
+        max-width: 96%;
+        min-width: 320px;
+    }
+    .app .show-sm {
+        display: block;
+    }
+    .app .hide-sm {
+        display: none;
+    }
+    .app .mobile-clear {
+        display: block;
+        clear: both;
+    }
+}
+
+@media (min-width: 1200px) {
+    .app .container {
+        max-width: 1260px;
+    }
+}
+/*-- basic end --*/
+
+/*-- grid system --*/
+.app .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.app .no-gutters>.col,
+.app .no-gutters>[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+.app [class*="col-"] {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.app .col-1 {
+    max-width: 8.333333%;
+}
+.app .col-2 {
+    max-width: 16.666667%;
+}
+.app .col-3 {
+    max-width: 25%;
+}
+.app .col-4 {
+    max-width: 33.333333%;
+}
+.app .col-5 {
+    max-width: 41.666667%;
+}
+.app .col-6 {
+    max-width: 50%;
+}
+.app .col-7 {
+    max-width: 58.333333%;
+}
+.app .col-8 {
+    max-width: 66.666667%;
+}
+.app .col-9 {
+    max-width: 75%;
+}
+.app .col-10 {
+    max-width: 83.333333%;
+}
+.app .col-11 {
+    max-width: 91.666667%;
+}
+.app .col-12 {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .app [class*="col-"] {
+        padding: 5px;
+    }
+    .app .col-sm-1 {
+        max-width: 8.333333%;
+    }
+    .app .col-sm-2 {
+        max-width: 16.666667%;
+    }
+    .app .col-sm-3 {
+        max-width: 25%;
+    }
+    .app .col-sm-4 {
+        max-width: 33.333333%;
+    }
+    .app .col-sm-5 {
+        max-width: 41.666667%;
+    }
+    .app .col-sm-6 {
+        max-width: 50%;
+    }
+    .app .col-sm-7 {
+        max-width: 58.333333%;
+    }
+    .app .col-sm-8 {
+        max-width: 66.666667%;
+    }
+    .app .col-sm-9 {
+        max-width: 75%;
+    }
+    .app .col-sm-10 {
+        max-width: 83.333333%;
+    }
+    .app .col-sm-11 {
+        max-width: 91.666667%;
+    }
+    .app .col-sm-12 {
+        max-width: 100%;
+    }
+}
+/*-- grid system end --*/
+
+/*-- other --*/
+.app .w-100 {
+    width: 100%;
+}
+
+/* flex-menu */
+.app ul.flex-menu  {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    padding-left:0;
+    margin-bottom: 0;
+}
+.app ul.flex-menu li {
+    width: 100%;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.app ul.flex-menu li+li {
+    margin-left: 2%;
+}
+
+/*image RWD*/
+.app .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/*-- fix --*/
+.coaVAi {
+    color: inherit;
+}

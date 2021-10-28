@@ -381,7 +381,7 @@ body .vip-wrap {
     text-align: left;
     z-index: 1;
     margin: 0 auto;
-    overflow: scroll; 
+    overflow: scroll;
 }
 
 .getContent {
@@ -1427,7 +1427,8 @@ body .vip-wrap {
         max-height: 432px;
         border-right: none;
     }
-    .lb-content{
+
+    .lb-content {
         overflow: hidden;
     }
 }
@@ -1516,6 +1517,7 @@ body .vip-wrap {
 /*-- fairies video and photos --*/
 .vip-fairies {
     position: relative;
+    padding-bottom: 20px;
     background: #FFF5DF;
 }
 
@@ -1645,3 +1647,26 @@ body .vip-wrap {
 }
 
 /*-- fairies video and photos end --*/
+/*-- special banner end --*/
+.vip-special-banner {
+    background: #FFF5DF;
+    padding-bottom: 40px;
+}
+
+.vip-special-banner a,
+.vip-special-banner picture {
+    display: block;
+}
+
+.vip-special-banner img {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .vip-special-banner {
+        padding-bottom: 20px;
+    }
+}
+
+/*-- special banner --*/

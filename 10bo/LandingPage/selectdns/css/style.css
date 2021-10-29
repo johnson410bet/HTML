@@ -418,8 +418,22 @@ body:before {
     color: #59748A;
 }
 
-.sbetintro .article-feed+.article-feed{
+.sbetintro .article-feed+.article-feed {
     margin: 10px 0;
+}
+
+.sbetintro .article-feed .article-title {
+    position: relative;
+}
+
+.sbetintro .article-feed .article-title:before {
+    content: "";
+    position: absolute;
+    top: 3.5px;
+    left: -20px;
+    height: 16px;
+    width: 16px;
+    background: url(../images/icon-Small-Arrow-Right.svg) no-repeat;
 }
 
 .sbetintro .article-feed h4 {
@@ -437,7 +451,7 @@ body:before {
 }
 
 @media (max-width: 768px) {
-    .sbetintro .article-feed h4 a.btn{
+    .sbetintro .article-feed h4 a.btn {
         display: none;
     }
 }
